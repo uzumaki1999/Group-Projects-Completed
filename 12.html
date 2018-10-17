@@ -1,0 +1,319 @@
+<html>
+	<head>
+		<title>HTML - BACKGROUNDS</title>
+	</head>
+
+
+	<style>
+body{
+		background:url(bg7.jpg);
+		color:rgba(224, 226, 219, 0.829);
+		background-size:1350px 800px,auto;
+		background-attachment:fixed;
+	
+	}
+	
+	fieldset{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.6);
+		border-radius:20px;
+		padding: 2px;
+	
+	}
+	
+	.headder{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.6);
+		border-radius:20px;
+		padding: 5px;
+		color:black;
+		text-align:center;
+	}
+	
+	.briefing{
+			border: 2px solid black;
+			background-color:rgba(0,0,0,0.6);
+			border-radius:20px;
+			padding: 5px;
+		
+		}
+	
+	table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	}
+
+	.example{
+		border: 2px solid black;
+		background-color:rgba(255,255,255,0.5);
+		border-style:double;
+		border-radius:10px;
+		color: red;
+	}
+
+	.output{
+		border: 2px solid black;
+		background-color:rgba(255,255,255,0.5);
+		border-style:solid;
+		border-radius:10px;
+
+	}
+	body {margin:0;}
+
+.navbar {
+     position: fixed;
+    top:0;
+    width:100%;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+.pan
+{
+	margin:0px 40px;
+}
+	</style>
+
+	<body>
+	<div class="navbar">
+  <a href="Proj.html">Home</a>
+  <a href="overview.html">Overview</a> 
+  <a href="tutos.html">Credits</a> 
+  <div class="subnav">
+    <button class="subnavbtn">Course Handout <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a style="color:black" href="1.html">Basic Tags</a>
+      <a style="color:black" href="2.html">Elements</a>
+      <a style="color:black" href="3.html">Attributes</a>
+      <a style="color:black" href="4.html">Formatting Tags</a>
+      <a style="color:black" href="5.html">Phase Tags</a>
+      <a style="color:black" href="6.html">Meta Tag</a>
+      <a style="color:black" href="7.html">Comments</a>
+      <a style="color:black" href="8.html">Images</a>
+      <a style="color:black" href="9.html">Table</a>
+      <a style="color:black" href="10.html">List</a>
+      <a style="color:black" href="11.html">Frames</a>
+      <a style="color:black" href="12.html">Background</a>
+      <a style="color:black" href="13.html">Colors</a>
+      <a style="color:black" href="14.html">Links</a>
+      <a style="color:black" href="15.html">Marquee</a>
+      <a style="color:black" href="16.html">Header</a>
+      <a style="color:black" href="17.html">Fonts</a>
+      <a style="color:black" href="18.html">Forms</a>
+    
+    </div>
+  </div>
+  <a href="feedback.html">Feedback</a>
+</div><br>
+<div class="pan">
+		<div class="headder">
+			<h1><p style="border: 2px solid red;margin-left:450px;font-family:verdana;border-radius:25px;padding:5px;text-align:center;margin-right:450px;background-color:red">HTML-BACKGROUND</p></h1>
+		</div>
+		<hr>
+		<hr>
+		<div class="briefing">
+			<h2><u>HTML - BACKGROUNDS</u></h2>
+			<br>
+			<p> By default, your webpage background is white in color.<br>
+			You may not like it, but no worries.<br>
+			HTML provides you following two good ways to decorate your webpage background.<br>
+
+<ul type="square">
+			<li>HTML Background with Colors</li>
+			<li>HTML Background with Images</li>
+			</ul>
+		</div>
+
+		<hr>
+		<h1>Html Background with Colors</h1><br>
+The bgcolor attribute is used to control the background of an HTML element, specifically page body and table backgrounds.
+<br>
+<br>
+Following is the syntax to use bgcolor attribute with any HTML tag.
+<br>
+<br>
+<legend>Example</legend> <br>
+			<p>
+
+			<div class="example">
+				&lt tagname bgcolor = "color_value"...&gt
+			</p>
+			</fieldset>
+			</div>
+
+<br>
+This color_value can be given in any of the following formats -<br>
+<br>
+<br><legend>Example</legend> <br>
+			<p>
+
+			<div class="example">
+				&lt !-- Format 1 - Use color name --&gt<br>
+                &lt table bgcolor = "lime" &gt<br>
+
+               &lt !-- Format 2 - Use hex value --&gt<br>
+               &lt table bgcolor = "#f1f1f1" &gt<br>
+
+              &lt !-- Format 3 - Use color value in RGB terms --&gt<br>
+              &lt table bgcolor = "rgb(0,0,120)" &gt<br>
+</p>
+			</fieldset>
+			</div>
+<h2>EXAMPLE</h2>
+<p>Here are the example to set a background of an HTML tag</p>
+<fieldset>
+			<legend>Example</legend> <br>
+			<p>
+
+			<div class="example">
+				<pre>	
+&lt!DOCTYPE html&gt<br>
+&lt html&gt <br>
+
+   &lt head&gt<br>
+      &lt title&gt<font color="white"> HTML Background Colors</font>&lt/title&gt<br>
+   &lt/head&gt<br>
+
+&lt body&gt<br>
+      &lt!-- Format 1 - Use color name --&gt<br>
+      &lttable bgcolor = "yellow" width = "100%"&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<br>
+			<font color="white"> This background is yellow</font>><br>
+            &lt/td&gt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt<br>
+
+      &lt!-- Format 2 - Use hex value --&gt<br>
+      &lttable bgcolor = "#6666FF" width = "100%"&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<br>
+			<font color="white">  This background is sky blue</font>><br>
+            &lt/td&gt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt<br>
+
+      &lt!-- Format 3 - Use color value in RGB terms --&gt<br>
+      &lttable bgcolor = "rgb(255,0,255)" width = "100%"&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<br>
+			<font color="white">  This background is green></font><br>
+            &lt/td&gt<br>
+         &lt/tr&gt<br>
+	  &lt/table&gt<br>
+	  
+&lt/body&gt<br>
+
+&lt/html&gt<br></pre>
+	</p>
+			</fieldset>
+			</div>
+			<fieldset>
+						<legend>Output</legend><br>
+						<div class="output">
+							<p>
+								<table bgcolor = "yellow" width = "100%">
+								         <tr>
+								            <td style="color:black">
+								               This background is yellow
+								            </td>
+								         </tr>
+								      </table>
+								      <table bgcolor = "#6666FF" width = "100%"><br>
+								         <tr><br>
+								            <td><br>
+								               This background is sky blue<br>
+								            </td><br>
+								         </tr><br>
+								      </table><br>
+								      <table bgcolor = "#00FF00" width = "100%"><br>
+								         <tr><br>
+								            <td style="color:black"><br >
+                                        This background is green<br>
+                 </td><br>
+			   								         </tr><br>
+			   								      </table><br>
+
+							</p>
+						</div>
+						</fieldset>
+		</div>
+<hr>
+		<div class="attributes">
+			<h2><u>Html Background with Images</u></h2>
+			<p> The background attribute can also be used to control the background of an HTML element, specifically page body and table backgrounds.<br>
+			You can specify an image to set background of your HTML page or table.<br>
+			<br>
+			<br>
+			Following is the syntax to use background attribute with any HTML tag.
+
+
+
+</p>
+<fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+			&lttagname background = "Image URL"...&gt
+
+					</p>
+			</fieldset>
+			</div>
+			<h3>The most frequently used image formats are JPEG, GIF and PNG images.</h3>
+
+		</div>
+	</body>
+</html>
+

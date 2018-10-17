@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head><style>
+
+    body{
+      background:url(pic.jpg);
+      color:rgba(224, 226, 219, 0.829);
+      background-size:1350px 800px,auto;
+      background-attachment:fixed;
+    
+    }
+    
+    fieldset{
+      border: 2px solid black;
+      background-color:rgba(0,0,0,0.6);
+      border-radius:20px;
+      padding: 2px;
+    
+    }
+    
+    .headder{
+      border: 2px solid black;
+      background-color:rgba(0,0,0,0.6);
+      border-radius:20px;
+      padding: 5px;
+      color:black;
+      text-align:center;
+    }
+    
+    .briefing{
+        border: 2px solid black;
+        background-color:rgba(0,0,0,0.6);
+        border-radius:20px;
+        padding: 5px;
+      
+    }
+    
+    table, th, td {
+      border: 1px solid orange;
+      border-collapse: collapse;
+    }
+    .output{
+      border: 2px solid black;
+      background-color:rgba(255,255,255,0.5);
+      border-style:solid;
+      border-radius:10px;
+      color:white;
+  
+    }
+    </style>
+<body>
+<h1><p style="border: 2px solid red;margin-left:450px;padding:5px;text-align:center;margin-right:450px;background-color:red">Menu List(menu)</p></h1>
+<hr>
+<hr>
+<font size="+1" color="white">
+<h2>Definition and Usage</h2>
+<p>The &lt;menu&gt; tag defines a list/menu of commands.</p>
+<p>The &lt;menu&gt; tag is used for context menus, toolbars and for listing form controls and commands.</p>
+<hr>
+<h2>Attributes</h2>
+<font color="black">
+<table class="w3-table-all notranslate" border="1" bgcolor="white">
+  <tr>
+    <th style="width:20%">Attribute</th>
+    <th style="width:20%">Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>label</td>
+    <td><i>text</i></td>
+    <td>Specifies a visible label for the menu</td>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>list<br>
+ toolbar<br>context</td>
+    <td>Specifies which type of menu to display</td>
+  </tr>
+</table>
+</font>
+<h2>Global Attributes</h2>
+<p>The &lt;menu&gt; tag also supports the Global Attributes in HTML.</p>
+<hr>
+<h2>Event Attributes</h2>
+<p>The &lt;menu&gt; tag also supports theEvent Attributes in HTML.</p>
+<hr>
+
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>A context menu with different &lt;menuitem&gt; elements:</p>
+<div class="w3-code notranslate htmlHigh">
+    &lt;menu type=&quot;context&quot; id=&quot;mymenu&quot;&gt;<br>&nbsp; &lt;menuitem label=&quot;Refresh&quot; onclick=&quot;window.location.reload();&quot; icon=&quot;ico_reload.png&quot;&gt;<br>&nbsp; &lt;/menuitem&gt;<br>&nbsp; &lt;menu label=&quot;Share on...&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;menuitem label=&quot;Twitter&quot; icon=&quot;ico_twitter.png&quot;<br>&nbsp;&nbsp;&nbsp; onclick=&quot;window.open('//twitter.com/intent/tweet?text='+window.location.href);&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/menuitem&gt;<br>&nbsp;&nbsp;&nbsp; &lt;menuitem label=&quot;Facebook&quot; icon=&quot;ico_facebook.png&quot;<br>&nbsp;&nbsp;&nbsp; onclick=&quot;window.open('//facebook.com/sharer/sharer.php?u='+window.location.href);&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/menuitem&gt;<br>&nbsp; &lt;/menu&gt;<br>&nbsp; &lt;menuitem label=&quot;Email This Page&quot;<br>&nbsp; onclick=&quot;window.location='mailto:?body='+window.location.href;&quot;&gt;&lt;/menuitem&gt;<br>
+ &lt;/menu&gt;</div>
+</div>
+<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of A Menu  List</h2><br>
+					<ul style="list-style-type:disc;">
+
+<div style="background:red;border:1px solid #cccccc;padding: 10px;" contextmenu="mymenu">
+<p>Right-click inside this box to see the context menu!</p>
+
+<menu type="context" id="mymenu">
+  <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png"></menuitem>
+  <menu label="Share on...">
+    <menuitem label="Twitter" icon="ico_twitter.png" onclick="window.open('//twitter.com/intent/tweet?text=' + window.location.href);"></menuitem>
+    <menuitem label="Facebook" icon="ico_facebook.png" onclick="window.open('//facebook.com/sharer/sharer.php?u=' + window.location.href);"></menuitem>
+  </menu>
+  <menuitem label="Email This Page" onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
+</menu>
+
+</div>
+
+<p>This example currently only works in Firefox!</p>
+
+
+</p>
+			</div>
+			</fieldset>
+
+</font>
+</body>
+</html>

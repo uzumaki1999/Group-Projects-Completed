@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ordered lsit</title>
+</head><style>
+
+    body{
+      background:url(bg7.jpg);
+      color:rgba(224, 226, 219, 0.829);
+      background-size:1350px 800px,auto;
+      background-attachment:fixed;
+    
+    }
+    
+    fieldset{
+      border: 2px solid black;
+      background-color:rgba(0,0,0,0.6);
+      border-radius:20px;
+      padding: 2px;
+    
+    }
+    
+    .headder{
+      border: 2px solid black;
+      background-color:rgba(0,0,0,0.6);
+      border-radius:20px;
+      padding: 5px;
+      color:black;
+      text-align:center;
+    }
+    
+    .briefing{
+        border: 2px solid black;
+        background-color:rgba(0,0,0,0.6);
+        border-radius:20px;
+        padding: 5px;
+      
+    }
+    
+    table, th, td {
+      border: 1px solid orange;
+      border-collapse: collapse;
+    }
+    .output{
+      border: 2px solid black;
+      background-color:rgba(255,255,255,0.5);
+      border-style:solid;
+      border-radius:10px;
+      color:white;
+  
+    }
+    </style>
+<body>
+<h1><p style="border: 2px solid red;margin-left:450px;padding:5px;text-align:center;margin-right:450px;background-color:red">Ordered List(ol)</p></h1>
+<hr>
+<hr>
+<br>
+<font size="+1">
+<h2>Definition and Usage</h2>
+<p>The &lt;ol&gt; tag defines an ordered list. An ordered list can be numerical or alphabetical.</p>
+<p>Use the <a href="li.html">&lt;li&gt;</a> tag to define list items.</p>
+<hr>
+
+<h2>Attributes</h2>
+<p class="html5badge" style="background-position:left;padding-left:20px;height:18px;"></p>
+<table class="w3-table-all notranslate" border="1"> 
+  <tr>
+    <th style="width:20%">Attribute</th>
+    <th style="width:20%">Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+ 
+    <td>compact</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>
+ Specifies that the list should render smaller than normal</td>
+  </tr>
+  <tr>
+    <td class="html5badge">reversed</td>
+    <td>reversed</td>
+    <td>Specifies that the list order should be descending (9,8,7...)</td>
+  </tr>
+  <tr>
+    <td>start</td>
+    <td><i>number</i></td>
+    <td>Specifies the start value of an ordered list</td>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>1<br>
+ A<br>
+    a<br>
+    I<br>
+    i</td>
+    <td>Specifies the kind of marker to use in the list</td>
+  </tr>
+  </table>
+<hr>
+<div>
+<h2>The Type Attribute</h2>
+<p>The <code class="w3-codespan">type</code> attribute of the <code class="w3-codespan">&lt;ol&gt;</code> tag, defines the type of the 
+list item marker:</p>
+<table class="w3-table-all notranslate"  border="3">
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>type=&quot;1&quot;</td>
+<td>The list items will be numbered with numbers (default)</td>
+</tr>
+<tr>
+<td>type=&quot;A&quot;</td>
+<td>The list items will be numbered with uppercase letters</td>
+</tr>
+<tr>
+<td>type=&quot;a&quot;</td>
+<td>The list items will be numbered with lowercase letters</td>
+</tr>
+<tr>
+<td>type=&quot;I&quot;</td>
+<td>The list items will be numbered with uppercase roman numbers</td>
+</tr>
+<tr>
+<td>type=&quot;i&quot;</td>
+<td>The list items will be numbered with lowercase roman numbers</td>
+</tr>
+</table>
+</div>
+
+<h2>Ordered List Example</h2>
+
+<div class="w3-example">
+<h3>Numbers:</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ol type=&quot;1&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</div>
+</div>
+
+
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of Numbers ordered list</h2><br>
+					<ul style="list-style-type:disc;">
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+
+</p>
+			</div>
+			</fieldset>
+		</div>
+
+
+<div class="w3-example">
+<h3>Uppercase Letters:</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ol type=&quot;A&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</div>
+</div>
+
+<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of Uppercase Letters ordered list</h2><br>
+					<ul style="list-style-type:disc;"> 
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+
+</p>
+			</div>
+			</fieldset>
+		</div>
+
+
+<div class="w3-example">
+<h3>Lowercase Letters:</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ol type=&quot;a&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</div>
+</div>
+
+
+<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of Lowercase Letters ordered list</h2><br>
+					<ul style="list-style-type:disc;">
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+
+</p>
+			</div>
+			</fieldset>
+		</div>
+<div class="w3-example">
+<h3>Uppercase Roman Numbers:</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ol type=&quot;I&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</div>
+</div>
+<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of Uppercase Roman Numbers ordered list</h2><br>
+					<ul style="list-style-type:disc;">
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+</p>
+			</div>
+			</fieldset>
+		</div>
+
+<div class="w3-example">
+<h3>Lowercase Roman Numbers:</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ol type=&quot;i&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</div>
+</div>
+<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of Lowercase Roman Numbers ordered list</h2><br>
+					<ul style="list-style-type:disc;">
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+			</div>
+			</fieldset>
+		</div>
+</font>
+
+
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+﻿<html>
+	<head>
+		<title>
+			LINKING TAGS
+		</title>
+	</head>
+	
+	
+	<style>
+	
+	
+	body{
+		background:url(bg3.jpg);
+		color:orange;
+		background-size:1350px 800px,auto;
+		background-attachment:fixed;
+	
+	}
+	
+	fieldset{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.6);
+		border-radius:20px;
+		padding: 2px;
+	
+	}
+	
+	.headder{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.6);
+		border-radius:20px;
+		padding: 5px;
+		color:black;
+		text-align:center;
+	}
+	
+	.briefing{
+			border: 2px solid black;
+			background-color:rgba(0,0,0,0.6);
+			border-radius:20px;
+			padding: 5px;
+		
+		}
+	
+	
+	
+	
+	table, th, td {
+    border: 1px solid orange;
+    border-collapse: collapse;
+	}
+
+	.example{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.5);
+		border-style:double;
+		border-radius:10px;
+	}
+
+	.output{
+		border: 2px solid black;
+		background-color:rgba(255,255,255,0.5);
+		border-style:solid;
+		border-radius:10px;
+		color:white;
+
+	}
+
+	th{
+		color:white;
+	}
+	
+	td{
+		color:silver;
+	}
+	body {margin:0;}
+
+.navbar {
+     position: fixed;
+    top:0;
+    width:100%;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+.pan
+{
+	margin:0px 40px;
+}
+	</style>
+	
+	<body>
+	<div class="navbar">
+  <a href="Proj.html">Home</a>
+  <a href="overview.html">Overview</a> 
+  <a href="tutos.html">Credits</a> 
+  <div class="subnav">
+    <button class="subnavbtn">Course Handout <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a style="color:black" href="1.html">Basic Tags</a>
+      <a style="color:black" href="2.html">Elements</a>
+      <a style="color:black" href="3.html">Attributes</a>
+      <a style="color:black" href="4.html">Formatting Tags</a>
+      <a style="color:black" href="5.html">Phase Tags</a>
+      <a style="color:black" href="6.html">Meta Tag</a>
+      <a style="color:black" href="7.html">Comments</a>
+      <a style="color:black" href="8.html">Images</a>
+      <a style="color:black" href="9.html">Table</a>
+      <a style="color:black" href="10.html">List</a>
+      <a style="color:black" href="11.html">Frames</a>
+      <a style="color:black" href="12.html">Background</a>
+      <a style="color:black" href="13.html">Colors</a>
+      <a style="color:black" href="14.html">Links</a>
+      <a style="color:black" href="15.html">Marquee</a>
+      <a style="color:black" href="16.html">Header</a>
+      <a style="color:black" href="17.html">Fonts</a>
+      <a style="color:black" href="18.html">Forms</a>
+    
+    </div>
+  </div>
+  <a href="feedback.html">Feedback</a>
+</div>
+	<br>
+	<div class="pan">
+		<div class="headder">
+			<h1><p style="border: 2px solid red;font-family:verdana;margin-left:450px;border-radius:25px;padding:5px;text-align:center;margin-right:450px;background-color:red">LINKING TAGS</p></h1>
+		</div>
+		<hr>
+		<hr>
+		<div class="briefing">
+			<h2><u><font color=snow face="Courier New">INTRODUCTION</font></u></h2>
+			<br>
+			<p><font color="silver"> A webpage can contain various links that take you directly to other pages and even specific parts of a given page. These links are known as hyperlinks.</p>
+			<p>Hyperlinks allow visitors to navigate between Web sites by clicking on words, phrases, and images. Thus you can create hyperlinks using text or images available on a webpage.</p>
+		</font></div>
+		<hr>
+		<div class="briefing">
+			<h2><u><font color=snow face="Courier New">DOCUMENTAION LINKING</font></u></h2>
+			<p><font color="silver">A link is specified using HTML tag &lt a &gt. This tag is called anchor tag and anything between the opening &lt a &gt tag and the closing &lt a &gt tag becomes part of the link and a user can click that part to reach to the linked document. Following is the simple syntax to use &lt a &gt tag.</p>
+			</font>
+			</div>
+			<hr>
+			<fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt <font color="red">html</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Example</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">body</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">h2</font> &gt <br> 
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">This is an example of anchor tag.</font><br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/h2</font> &gt &lt <font color="red">br</font> &gt <br>
+			    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">a &nbsp href="https://www.google.com"  &nbsp target="_blank"</font>&gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Link to GOOGLE</font><br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/a</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/body</font> &gt <br>
+				&lt <font color="red">/html</font> &gt <br>
+			</p>
+			</fieldset>
+			</div>	
+			
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of anchor tag.</h2><br>
+					<a href="https://www.google.com" target="_blank">Link to GOOGLE</a>
+				</p>
+			</div>
+			</fieldset>
+		</div>
+		<hr>
+		<div class="briefing">
+			<h2><u><font color=snow face="Courier New">TARGET ATTRIBUTE</font></u></h2>
+			<p><font color="silver">We have used target attribute in our previous example. This attribute is used to specify the location where linked document is opened. Following are the possible options −</p>
+			</font><table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Option and Description</th>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td><b>_blank</b><br>
+						<p> Opens the linked document in a new windows or tab.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>_self</b><br>
+						<p> Opens the linked document in the same frame.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>3</td>
+					<td><b>_parent</b><br>
+						<p> Opens the linked document in the parent frame.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>4</td>
+					<td><b>_top</b><br>
+						<p> Opens the linked document in the full body of the window.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>5</td>
+					<td><b>target frame</b><br>
+						<p>Opens the linked document in a named targetframe.
+					</td>
+				</tr>
+			</table><br>
+			</div><hr>
+		<fieldset>
+			
+			<legend>Example</legend><br>
+			<div class="example">
+			<p>
+				
+				&lt <font color="red">html</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Example</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">body</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">h2</font> &gt <br> 
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">This is an example of anchor tag target attribute.</font><br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/h2</font> &gt &lt <font color="red">br</font> &gt <br>
+			    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">a &nbsp href="https://www.google.com"  &nbsp target="_blank" </font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Link to GOOGLE(blank)</font><br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/a</font> &gt <br>
+				
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">a &nbsp href="https://www.google.com"  &nbsp target="_self"</font>&gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Link to GOOGLE(self)</font><br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/a</font> &gt <br>
+				
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">a &nbsp href="https://www.google.com"  &nbsp target="_parent"</font>&gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Link to GOOGLE(parent)</font><br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/a</font> &gt <br>
+				
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">a &nbsp href="https://www.google.com"  &nbsp target="_top"</font>&gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Link to GOOGLE(top)</font><br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/a</font> &gt <br>
+				
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/body</font> &gt <br>
+				&lt <font color="red">/html</font> &gt <br>
+			</p>
+			</div>	
+			</fieldset>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of anchor tag target attribute.</h2><br>
+					<a href="https://www.google.com" target="_blank">Link to GOOGLE(blank)</a><br>
+					<a href="https://www.google.com" target="_self">Link to GOOGLE(self)</a><br>
+					<a href="https://www.google.com" target="_parent">Link to GOOGLE(parent)</a><br>
+					<a href="https://www.google.com" target="_top">Link to GOOGLE(top)</a><br>
+				</p>
+			</div>
+			</fieldset>
+		</div>
+		<br>
+		<hr>
+		<div class="briefing">
+			<h2><u> <font color=snow face="Courier New">Image Links</font></u></h2>
+			<p><font color="silver">We have seen how to create hypertext link using text and we also learnt how to use images in our webpages. Now, we will learn how to use images to create hyperlinks.</p>
+			</font></div><hr><fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt <<font color="red">html</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Example</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">body</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">h2</font> &gt <br> 
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">This is an example of anchor tag.</font><br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/h2</font> &gt &lt <font color="red">br</font> &gt <br>
+			    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">a &nbsp href="https://www.google.com"  &nbsp target="_blank"</font>&gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">img &nbsp src="image.png" &nbsp height="200" &nbsp width="200"</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/a</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/body</font> &gt <br>
+				&lt <font color="red">/html</font> &gt <br>
+			</p>
+			</fieldset>
+			</div>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of image link.</h2><br>
+					<a href="https://www.google.com" target="_blank"><img  src="data:image/png;base64,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"  height="100"  width="100" ></a>
+				</p>
+			</div>
+			</fieldset>
+		</div>
+	</body>
+</html>
+		
+		

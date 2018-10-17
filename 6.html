@@ -1,0 +1,138 @@
+<html>
+	<head>
+		<title>
+			Meta tags
+		</title>
+	</head>
+
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+	<body>
+	
+	<div class="navbar">
+  <a href="Proj.html">Home</a>
+  <a href="verview.html">Overview</a> 
+  <a href="tutos.html">Credits</a> 
+  <div class="subnav">
+    <button class="subnavbtn">Course Handout <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a style="color:black" href="1.html">Basic Tags</a>
+      <a style="color:black" href="2.html">Elements</a>
+      <a style="color:black" href="3.html">Attributes</a>
+      <a style="color:black" href="4.html">Formatting Tags</a>
+      <a style="color:black" href="5.html">Phase Tags</a>
+      <a style="color:black" href="6.html">Meta Tag</a>
+      <a style="color:black" href="7.html">Comments</a>
+      <a style="color:black" href="8.html">Images</a>
+      <a style="color:black" href="9.html">Table</a>
+      <a style="color:black" href="10.html">List</a>
+      <a style="color:black" href="11.html">Frames</a>
+      <a style="color:black" href="12.html">Background</a>
+      <a style="color:black" href="13.html">Colors</a>
+      <a style="color:black" href="14.html">Links</a>
+      <a style="color:black" href="15.html">Marquee</a>
+      <a style="color:black" href="16.html">Header</a>
+      <a style="color:black" href="17.html">Fonts</a>
+      <a style="color:black" href="18.html">Forms</a>
+    
+    </div>
+  </div>
+  <a href="feedback.html">Feedback</a>
+</div>
+<br>
+<div class="pan">
+		<div>
+			<h1><p style="border: 2px solid red ; border-radius:25px;font-family:verdana;margin-left:450px;padding:5px;text-align:center;margin-right:450px;color:black;background-color:red">META TAGS</p></h1>
+		</div>
+		<hr>
+		<hr>
+		<div class="briefing">
+			<h2><u><font color=snow face="Courier New">Adding Meta Tags to Your Documents</font></u></h2>
+			<br>
+			<p><font color="silver"> A webpage can contain various links that take you directly to other pages and even specific parts of a given page. These links are known as hyperlinks.</p>
+			<p>Hyperlinks allow visitors to navigate between Web sites by clicking on words, phrases, and images. Thus you can create hyperlinks using text or images available on a webpage.</p>
+		<p>HTML lets you specify metadata - additional important information about a document in a variety of ways. The META elements can be used to include name/value pairs describing properties of the HTML document, such as author, expiry date, a list of keywords, document author etc.</p>
+		<p>The &lt meta &gt tag is used to provide such additional information. This tag is an empty element and so does not have a closing tag but it carries information within its attributes.</p>
+		<p>You can include one or more meta tags in your document based on what information you want to keep in your document but in general, meta tags do not impact physical appearance of the document so from appearance point of view, it does not matter if you include them or not.</p>
+		</font></div>
+		<hr>
+		<div class="briefing">
+		<table border="1">
+						<tr bgcolor="gray">
+							<th >SL. NO.</th>
+							<th>Attribute and Description</th>
+						</tr>
+
+						<tr>
+							<td>1</td>
+							<td><b>Name</b><br>
+								<p> Name for the property. Can be anything. Examples include, keywords, description, author, revised, generator etc.</p>
+							</td>
+						</tr>
+
+						<tr>
+							<td>2</td>
+							<td><b>Content</b><br>
+								<p> Specifies the property's value.
+							</td>
+						</tr>
+
+						<tr>
+							<td>3</td>
+							<td><b>Scheme</b><br>
+								<p>Specifies a scheme to interpret the property's value(as declared in the content attribute).
+							</td>
+						</tr>
+
+						<tr>
+							<td>4</td>
+							<td><b>http-equiv</b><br>
+								<p> Used for http response message headers. For example, http-equiv can be used to refresh the page or to set a cookie. Values include content-type, expires, refresh and set-cookie.</p>
+							</td>
+						</tr>
+					</table><br>
+
+
+		<hr>
+		</div>
+		<hr>
+		<div class="tagdescription">
+		<div class="briefing">
+			<h2><u><font color=snow face="Courier New">Specifying Keywords</font></u></h2>
+			<p><font color="silver">A link is specified using HTML tag &lt a &gt. This tag is called anchor tag and anything between the opening &lt a &gt tag and the closing &lt a &gt tag becomes part of the link and a user can click that part to reach to the linked document. Following is the simple syntax to use &lt a &gt tag.</font></p>
+			</div>
+			<fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+
+				&lt <font color="red">html</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Example</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">body</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">h2</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">This is an example of anchor tag.</font><br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/h2</font> &gt &lt <font color="red">br</font> &gt <br>
+			 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">p</font> &gt &nbsp <font color="white">Hello HTML5!</font> &lt <font color="red">/p</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/body</font> &gt <br>
+				&lt <font color="red">/html</font> &gt <br>
+			</p>
+			</fieldset>
+			</div>
+
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of meta tag.</h2><br>
+					<p>  Hello HTML5! </p>
+				</p>
+			</div>
+			</fieldset>
+		</div>
+		<hr>

@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<title>
+			elements 
+		</title>
+	</head>
+	
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    .pan
+    {
+      margin:0px 40px;
+    }
+  </style>
+  </head>
+
+	<body><div class="navbar">
+  <a href="Proj.html">Home</a>
+  <a href="overview.html">Overview</a> 
+  <a href="tutos.html">Credits</a> 
+  <div class="subnav">
+    <button class="subnavbtn">Course Handout <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a style="color:black" href="1.html">Basic Tags</a>
+      <a style="color:black" href="2.html">Elements</a>
+      <a style="color:black" href="3.html">Attributes</a>
+      <a style="color:black" href="4.html">Formatting Tags</a>
+      <a style="color:black" href="5.html">Phase Tags</a>
+      <a style="color:black" href="6.html">Meta Tag</a>
+      <a style="color:black" href="7.html">Comments</a>
+      <a style="color:black" href="8.html">Images</a>
+      <a style="color:black" href="9.html">Table</a>
+      <a style="color:black" href="10.html">List</a>
+      <a style="color:black" href="11.html">Frames</a>
+      <a style="color:black" href="12.html">Background</a>
+      <a style="color:black" href="13.html">Colors</a>
+      <a style="color:black" href="14.html">Links</a>
+      <a style="color:black" href="15.html">Marquee</a>
+      <a style="color:black" href="16.html">Header</a>
+      <a style="color:black" href="17.html">Fonts</a>
+      <a style="color:black" href="18.html">Forms</a>
+    
+    </div>
+  </div>
+  <a href="feedback.html">Feedback</a>
+</div><br>
+<div class="pan">
+		<div>
+			<h1><p style="border: 2px solid red;margin-left:450px;border-radius:25px;font-family:verdana;color:black;padding:5px;text-align:center;margin-right:450px;background-color:red">HTML ELEMENTS</p></h1>
+		</div>
+		<hr>
+		<div class="briefing">
+			<h2><u>INTRODUCTION</u></h2>
+			<br>
+			<p>An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag, where the element name is preceded by a forward slash as shown below with few tags</p>
+            <table class="table table-bordered">
+                <tr>
+                <th style="text-align:center;">Start Tag</th>
+                <th style="text-align:center;">Content</th>
+                <th style="text-align:center;">End Tag</th>
+                </tr>
+                <tr>
+                <td>&lt;p&gt;</td>
+                <td>This is paragraph content.</td>
+                <td>&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;h1&gt;</td>
+                <td>This is heading content.</td>
+                <td>&lt;/h1&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;div&gt;</td>
+                <td>This is division content.</td>
+                <td>&lt;/div&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;br /&gt;</td>
+                <td></td>
+                <td></td>
+                </tr>
+                </table>
+                <p>So here <b>&lt;p&gt;....&lt;/p&gt;</b> is an HTML element, <b>&lt;h1&gt;...&lt;/h1&gt;</b> is another HTML element. There are some HTML elements which don't need to be closed, such as <b>&lt;img.../&gt;</b>, <b>&lt;hr /&gt;</b> and <b>&lt;br /&gt;</b> elements. These are known as <b>void elements</b>.</p>
+                <p>HTML documents consists of a tree of these elements and they specify how HTML documents should be built, and what kind of content should be placed in what part of an HTML document.</p>
+              <hr>  <h2>HTML Tag vs. Element</h2>
+<p>An HTML element is defined by a <i>starting tag</i>. If the element contains other content, it ends with a <i>closing tag</i>.</p>
+<p>For example, <b>&lt;p&gt;</b> is starting tag of a paragraph and <b>&lt;/p&gt;</b> is closing tag of the same paragraph but <b>&lt;p&gt;This is paragraph&lt;/p&gt;</b> is a paragraph element.</p></div>
+        <hr>
+        <h2>Nested HTML Elements</h2>
+<p>It is very much allowed to keep one HTML element inside another HTML element &minus;</p>
+		<div class="tagdescription">
+			
+			<fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Nested Elements Example <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <br> 
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt h1 &gt This is &lt i &gt italic &lt /i &gt heading &lt /h1 &gt .<br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &lt br &gt <br>
+			    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt p &gt This is &lt u &gt underlined &lt /u &gt paragraph &lt /p &gt <br>
+				
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</fieldset>
+			</div>	
+			
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+			
+					<h2> This is <i> italic </i>heading.</h2> 
+                <br> 
+              <h2> <p> This is <u> underlined </u> paragraph </p></h2>				
+			</div>
+			</fieldset>
+		</div>
+		</div>
+   
+	</body>
+</html>
+		
+		

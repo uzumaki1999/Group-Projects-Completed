@@ -1,0 +1,499 @@
+
+<html>
+	<head>
+		<title>
+			HTML-‏FONTS
+		</title>
+	</head>
+	
+	
+	<style>
+	body{
+		background:url(bg7.jpg);
+		color:rgba(224, 226, 219, 0.829);
+		background-size:1350px 800px,auto;
+		background-attachment:fixed;
+	
+	}
+	
+	fieldset{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.6);
+		border-radius:20px;
+		padding: 2px;
+	
+	}
+	
+	.headder{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.6);
+		border-radius:20px;
+		padding: 5px;
+		color:black;
+		text-align:center;
+	}
+	
+	.briefing{
+			border: 2px solid black;
+			background-color:rgba(0,0,0,0.6);
+			border-radius:20px;
+			padding: 5px;
+		
+		}
+	table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	}
+	
+	.example{
+		border: 2px solid black;
+		background-color:rgba(255,255,255,0.5);
+		border-style:double;
+		border-radius:10px;
+		color: red;
+	}
+	
+	.output{
+		border: 2px solid black;
+		background-color:rgba(255,255,255,0.5);
+		border-style:solid;
+		border-radius:10px;
+		color: white;
+	
+	}
+	body {margin:0;}
+
+.navbar {
+     position: fixed;
+    top:0;
+    width:100%;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+.pan
+{
+	margin:0px 40px;
+}
+	</style>
+	
+	<body>
+	<div class="navbar">
+  <a href="Proj.html">Home</a>
+  <a href="overview.html">Overview</a> 
+  <a href="tutos.html">Credits</a> 
+  <div class="subnav">
+    <button class="subnavbtn">Course Handout <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a style="color:black" href="1.html">Basic Tags</a>
+      <a style="color:black" href="2.html">Elements</a>
+      <a style="color:black" href="3.html">Attributes</a>
+      <a style="color:black" href="4.html">Formatting Tags</a>
+      <a style="color:black" href="5.html">Phase Tags</a>
+      <a style="color:black" href="6.html">Meta Tag</a>
+      <a style="color:black" href="7.html">Comments</a>
+      <a style="color:black" href="8.html">Images</a>
+      <a style="color:black" href="9.html">Table</a>
+      <a style="color:black" href="10.html">List</a>
+      <a style="color:black" href="11.html">Frames</a>
+      <a style="color:black" href="12.html">Background</a>
+      <a style="color:black" href="13.html">Colors</a>
+      <a style="color:black" href="14.html">Links</a>
+      <a style="color:black" href="15.html">Marquee</a>
+      <a style="color:black" href="16.html">Header</a>
+      <a style="color:black" href="17.html">Fonts</a>
+      <a style="color:black" href="18.html">Forms</a>
+    
+    </div>
+  </div>
+  <a href="feedback.html">Feedback</a>
+</div>
+	<br>
+	<div class="pan">
+		<div class="headder">
+			<h1><p style="border: 2px solid red;margin-left:450px;border-radius:25px;font-family:verdana;color:black;padding:5px;text-align:center;margin-right:450px;background-color:red">HTML-FONTS</p></h1>
+		</div>
+		<hr>
+		<hr>
+		<div class="briefing">
+			<h2><u>INTRODUCTION</u></h2>
+			<br>
+			<p> Fonts play a very important role in making a website more user friendly and increasing content readability. Font face and color depends entirely on the computer and browser that is being used to view your page but you can use HTML &ltfont&gt tag to add style, size, and color to the text on your website. You can use a &ltbasefont&gt tag to set all of your text to the same size, face, and color.</p>
+
+			<p>The font tag is having three attributes called size, color, and face to customize your fonts. To change any of the font attributes at any time within your webpage, simply use the &ltfont&gt tag. The text that follows will remain changed until you close with the &lt/font&gt tag. You can change one or all of the font attributes within one &ltfont&gt tag.</p>
+
+			<p><b>Note</b> −The font and basefont tags are deprecated and it is supposed to be removed in a future version of HTML. So they should not be used rather, it's suggested to use CSS styles to manipulate your fonts. But still for learning purpose, this chapter will explain font and basefont tags in detail.</p>
+</div>
+		<hr>
+		<div class="tagdescription">
+			<h2><u>Set Font Size</u></h2>
+			<p>You can set content font size using <b>size</b> attribute. The range of accepted values is from 1(smallest) to 7(largest). The default size of a font is 3.<br>
+			<fieldset>
+			<legend>Set Font Size</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font color="white"> Setting Font Size</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont size="1"&gt<font color="white"> Font size="1"</font> &lt/font&gt &ltbr /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont size="2"&gt<font color="white"> Font size="2" </font>&lt/font&gt &ltbr /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont size="3"&gt<font color="white"> Font size="3"</font> &lt/font&gt &ltbr /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont size="4"&gt<font color="white"> Font size="4" </font>&lt/font&gt &ltbr /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont size="5"&gt<font color="white"> Font size="5"</font> &lt/font&gt &ltbr /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont size="6"&gt<font color="white"> Font size="6"</font> &lt/font&gt &ltbr /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont size="7"&gt<font color="white"> Font size="7"</font> &lt/font&gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</fieldset>
+			</div>	
+			
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result.</h2><br>
+					 <font size = "1">Font size = "1"</font><br />
+      <font size = "2">Font size = "2"</font><br />
+      <font size = "3">Font size = "3"</font><br />
+      <font size = "4">Font size = "4"</font><br />
+      <font size = "5">Font size = "5"</font><br />
+      <font size = "6">Font size = "6"</font><br />
+      <font size = "7">Font size = "7"</font>
+				</p>
+			</div>
+			</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tagdescription">
+			<h2><u>Relative Font Size</u></h2>
+			<p>You can specify how many sizes larger or how many sizes smaller than the preset font size should be. You can specify it like &ltfont size = "+n"&gt or &ltfont size = "−n"&gt&ltbr&gt</p><br>
+			<fieldset>
+			<legend>Set Font Size</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Relative Font Size</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont size="-1"&gt Font size="-1" &lt/font&gt &ltbr /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont size="+1"&gt Font size="+1" &lt/font&gt &ltbr /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont size="+2"&gt Font size="+2" &lt/font&gt &ltbr /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont size="+3"&gt Font size="+3" &lt/font&gt &ltbr /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont size="+4"&gt Font size="+4" &lt/font&gt  <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</fieldset>
+			</div>	
+			
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result.</h2><br>
+					 <font size = "-1">Font size = "-1"</font><br />
+      				<font size = "+1">Font size = "+1"</font><br />
+      				<font size = "+2">Font size = "+2"</font><br />
+      				<font size = "+3">Font size = "+3"</font><br />
+      				<font size = "+4">Font size = "+4"</font>
+				</p>
+			</div>
+			</fieldset>
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <h2><u>Setting Font Face</u></h2>
+			<p>You can set font face using face attribute but be aware that if the user viewing the page doesn't have the font installed, they will not be able to see it. Instead user will see the default font face applicable to the user's computer.</p><br>
+			<fieldset>
+			<legend>Setting Font Face</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">font face</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont face="Times New Roman"&gt size="5"&gt <font color="white">Times New Roman </font>&lt/font&gt &lt br /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont face="Verdana"&gt size="5"&gt <font color="white">Verdana</font> &lt/font&gt &lt br /&gt <br> 
+				&nbsp &nbsp &nbsp &nbsp&ltFont face="Comic sans MS"&gt size="5"&gt <font color="white">Comic sans MS </font>&lt/font&gt &lt br /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont face="WildWest"&gt size="5"&gt<font color="white"> WildWest </font>&lt/font&gt &lt br /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp&ltFont face="Bedrock"&gt size="5"&gt <font color="white">Bedrock</font> &lt/font&gt &lt br /&gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</fieldset>
+			</div>	
+			
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result.</h2><br>
+					<font face = "Times New Roman" size = "5">Times New Roman</font><br />
+      				<font face = "Verdana" size = "5">Verdana</font><br />
+      				<font face = "Comic sans MS" size =" 5">Comic Sans MS</font><br />
+      				<font face = "WildWest" size = "5">WildWest</font><br />
+      				<font face = "Bedrock" size = "5">Bedrock</font><br />
+					</p>
+			</div>
+			</fieldset>
+            <h1><u>Specify alternate font faces</u></h1>
+            <p>A visitor will only be able to see your font if they have that font installed on their computer. So, it is possible to specify two or more font face alternatives by listing the font face names, separated by a comma.</p>
+            <fieldset>
+            	<div class="example">
+            	&lt Font face="arial,helvetica"&gt<br>
+            	&lt Font face="Lucida Calligraphy,Comic sans MS,Lucida Console"&gt
+            </fieldset>
+            <p>When your page is loaded, their browser will display the first font face available. If none of the given fonts are installed, then it will display the default font face Times New Roman.</p>
+            <h1><u>Setting Font Color</u></h1>
+            <p>You can set any font color you like using color attribute. You can specify the color that you want by either the color name or hexadecimal code for that color.</p>
+            <fieldset>
+			<legend>Setting Font Color</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">font color</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				&lt font color="#FF00ff"&gt<font color="white"> This text is in Pink</font> &lt/font&gt &ltbr/&gt<br>
+                &lt font color="red"&gt<font color="white">  This text is in red </font>&lt/font&gt <br> 
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</fieldset>
+
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result.</h2><br>
+					<font color = "#FF00FF">This text is in pink</font><br />
+      				<font color = "red">This text is red</font>
+				</p>
+			</div>
+			</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 
+			</div>	
+			
+			
+            <h1><u>Specify alternate font faces</u></h1>
+            <p>A visitor will only be able to see your font if they have that font installed on their computer. So, it is possible to specify two or more font face alternatives by listing the font face names, separated by a comma.</p>
+            <fieldset>
+            	<div class="example">
+            	&lt Font face="arial,helvetica"&gt<br>
+            	&lt Font face="Lucida Calligraphy,Comic sans MS,Lucida Console"&gt
+            </fieldset>
+            <p>When your page is loaded, their browser will display the first font face available. If none of the given fonts are installed, then it will display the default font face Times New Roman.</p>
+            <h1><u>Setting Font Color</u></h1>
+            <p>You can set any font color you like using color attribute. You can specify the color that you want by either the color name or hexadecimal code for that color.</p>
+            <fieldset>
+			<legend>Setting Font Color</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white"> font color</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				&lt font color="#FF00ff"&gt<font color="white">  This text is in Pink</font> &lt/font&gt &ltbr/&gt<br>
+                &lt font color="red"&gt<font color="white">  This text is in red</font> &lt/font&gt <br> 
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</fieldset>
+
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result.</h2><br>
+					<font color = "#FF00FF">This text is in pink</font><br />
+      				<font color = "red">This text is red</font>
+				</p>
+			</div>
+			</fieldset>
+             
+<h2><u>The &ltBasefont&gt Element</u></h2>
+			<p>The &ltbasefont&gt element is supposed to set a default font size, color, and typeface for any parts of the document that are not otherwise contained within a &ltfont&gt tag. You can use the &ltfont&gt elements to override the &ltbasefont&gt settings.<br>
+
+The &ltbasefont&gt tag also takes color, size and face attributes and it will support relative font setting by giving size a value of +1 for a size larger or −2 for two sizes smaller..</p><br>
+			<fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white"> Setting basefont Color </font><br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				&ltbasefont face="arial,verdana,sans-serif" size="2" color="#ff0000"&gt<br>
+				&ltp&gt <font color="white"> This is page's default font.</font>&lt/p&gt<br>
+                &lth2&gt<font color="white">  Example of the </font>&lt;basefont&gt;<font color="white">  Element</font> &lt/h2&gt<br>
+                &ltp&gt &ltfont size="+2" color="darkgray"&gt <br>
+				<font color="white">  This is darkgray text with two sizes larger</font><br>
+                &lt/font&gt<br>
+                &lt/p&gt<br>
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</fieldset>
+            <fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result.</h2><br>
+								  <basefont face = "arial, verdana, sans-serif" size = "2" color = "#ff0000">
+      <p>This is the page's default font.</p>
+      <h2>Example of the &lt;basefont&gt; Element</h2>
+      
+      <p><font size = "+2" color = "darkgray">
+            This is darkgray text with two sizes larger
+         </font>
+      </p>
+
+      <p><font face = "courier" size = "-1" color = "#000000">
+            It is a courier font, a size smaller and black in color.
+         </font>
+      </p>
+				</p>
+			</div>
+			</fieldset>
+				</p>
+			</div>
+			</fieldset>
+
+
+
+
+
+
+
+
+		
+

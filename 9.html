@@ -1,0 +1,769 @@
+<html>
+	<head>
+		<title>
+			TABLES
+		</title>
+	</head>
+	
+	
+    <style>
+
+        body{
+            background:url(bg7.jpg);
+            color:rgba(224, 226, 219, 0.829);
+            background-size:1350px 800px,auto;
+            background-attachment:fixed;
+        
+        }
+        
+        fieldset{
+            border: 2px solid black;
+            background-color:rgba(0,0,0,0.6);
+            border-radius:20px;
+            padding: 2px;
+        
+        }
+        
+        .headder{
+            border: 2px solid black;
+            background-color:rgba(0,0,0,0.6);
+            border-radius:20px;
+            padding: 5px;
+            color:black;
+            text-align:center;
+        }
+        
+        .briefing{
+                border: 2px solid black;
+                background-color:rgba(0,0,0,0.6);
+                border-radius:20px;
+                padding: 5px;
+            
+            }
+        
+        
+        
+        
+        table, th, td {
+        border: 1px solid orange;
+        border-collapse: collapse;
+        }
+    
+        .example{
+            border: 2px solid black;
+            background-color:rgba(255,255,255,0.5);
+            border-style:double;
+            border-radius:10px;
+            color: red;
+        }
+    
+        .output{
+            border: 2px solid black;
+            background-color:rgba(255,255,255,0.5);
+            border-style:solid;
+            border-radius:10px;
+            color:white;
+    
+        }
+		.navbar {
+    position: fixed;
+    top:0;
+    width:100%;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+
+.pan
+{
+  margin:0px 40px;
+}}
+        </style>
+
+	<body>
+		<div class="navbar">
+  <a href="Proj.html">Home</a>
+  <a href="overview.html">Overview</a> 
+  <a href="tutos.html">Credits</a> 
+  <div class="subnav">
+    <button class="subnavbtn">Course Handout <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a style="color:black" href="1.html">Basic Tags</a>
+      <a style="color:black" href="2.html">Elements</a>
+      <a style="color:black" href="3.html">Attributes</a>
+      <a style="color:black" href="4.html">Formatting Tags</a>
+      <a style="color:black" href="5.html">Phase Tags</a>
+      <a style="color:black" href="6.html">Meta Tag</a>
+      <a style="color:black" href="7.html">Comments</a>
+      <a style="color:black" href="8.html">Images</a>
+      <a style="color:black" href="9.html">Table</a>
+      <a style="color:black" href="10.html">List</a>
+      <a style="color:black" href="11.html">Frames</a>
+      <a style="color:black" href="12.html">Background</a>
+      <a style="color:black" href="13.html">Colors</a>
+      <a style="color:black" href="14.html">Links</a>
+      <a style="color:black" href="15.html">Marquee</a>
+      <a style="color:black" href="16.html">Header</a>
+      <a style="color:black" href="17.html">Fonts</a>
+      <a style="color:black" href="18.html">Forms</a>
+    
+    </div>
+  </div>
+  <a href="feedback.html">Feedback</a>
+</div>
+	<br>
+  <div class="pan">
+		<div class="headder">
+			<h1><p style="border: 2px solid red;font-family:verdana;margin-left:450px;padding:5px;border-radius:25px;text-align:center;margin-right:450px;background-color:red">TABLES</p></h1>
+		</div>
+		<hr>
+		<hr>
+		<div class="briefing">
+			<h2><u>INTRODUCTION</u></h2>
+			<br>
+			<p> A webpage can be made more informative and understandable using tables.</p>
+			<p>The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.</p>
+		</div>
+		<hr>
+		<div class="tagdescription">
+			<h2><u>TABLES FORMATION</u></h2>
+		<p>Table heading can be defined using &lt th &gt tag. This tag will be put to replace &lt td &gt tag, which is used to represent actual data cell.
+ Normally you will put your top row as table heading as shown below, otherwise you can use &lt th &gt element in any row. Headings, which are defined in &lt th &gt tag are centered and bold by default.</p>
+			<fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+                  &lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font color="white"> HTML Tables</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				 &lttable border = "1"&gt<br>
+				 &lttr&gt<br>
+				   &lttd&gt<font color="white">Row 1, Column 1</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">Row 1, Column 2</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         
+         &lttr&gt<br>
+            &lttd&gt<font color="white">Row 2, Column 1</font>
+            &lt/td&gt<br>
+            &lttd&g<font color="white">tRow 2, Column 2</font>&gt/td&lt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt<br>
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</fieldset>
+			</div>	
+			
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result</h2><br>
+					<html>
+
+   <head>
+      <title>HTML Tables</title>
+   </head>
+	
+   <body>
+      <table border = "1">
+         <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+         </tr>
+         
+         <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+         </tr>
+      </table>
+      
+   </body>
+</html>
+				</p>
+			</div>
+			</fieldset>
+		</div>
+		<hr>
+		<div class="attributes">
+			<h2><u>USE THE FOLLOWING</u></h2>
+			<ul>
+          <li>Use the HTML &lt table &gt element to define a table</li>
+          <li>Use the HTML &lt tr &gt element to define a table row</li>
+          <li>Use the HTML &lt td &gt element to define a table data</li>
+          <li>Use the HTML &lt th &gt element to define a table heading</li>
+          <li>Use the HTML &lt caption &gt element to define a table caption</li>
+          <li>Use the CSS border property to define a border</li>
+          <li>Use the CSS border-collapse property to collapse cell borders</li>
+          <li>Use the CSS padding property to add padding to cells</li>
+          <li>Use the CSS text-align property to align cell text</li>
+          <li>Use the CSS border-spacing property to set the spacing between cells</li>
+            <li>Use the colspan attribute to make a cell span many columns</li>
+            <li>Use the rowspan attribute to make a cell span many rows</li>
+            <li>Use the id attribute to uniquely define one table</li>  
+            <br>
+            <h2></h2>
+            <table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Some special properties</th>
+                    <th>Code</th>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td><b>Adding border to a table</b><br>
+						<p>To add border to a table we have to use css</p></td>
+<td>table, th, td <br>
+{
+    border: 1px solid black;
+}</td>
+</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>Border-Collapse</b><br>
+					<p>If you want the border to collapse into one solid border this property is used </p>
+                    </td>
+                <td>table, th, td <br>{
+    border: 1px solid black;<br>
+    border-collapse: collapse;
+}
+                </tr>
+				
+				<tr>
+					<td>3</td>
+					<td><b>Padding</b><br>
+	              <p>This property is used to specify the space between cell content cell border</p>
+					</td>
+                    <td>th, td <br>
+                    {
+    padding: 15px;
+}
+                    </td>
+				</tr>
+				
+				<tr>
+					<td>4</td>
+					<td><b>Text-align </b><br>
+					<p> This property is used to align the headings of the table.they can be aligned to centre,left and right.</p> 
+					</td>
+				<td>th <br>
+                {
+    text-align: left;
+}
+  </td>
+                </tr>
+				
+				<tr>
+					<td>5</td>
+					<td><b>Border-spacing</b><br>
+						<p>This property is used to specift the space between the cells. 	</p>				</td>
+				<td>table <br>{
+    border-spacing: 5px;
+}</td>
+                </tr>
+                <tr>
+                <td>6</td>
+                <td><b>Colspan</b>
+                <p>This property is used to make a cell span more than one column </p>
+                </td>
+                <td>
+                &lt th colspan="2" &gt cell content &lt /th &gt </td>
+                </tr>
+                
+                <tr><td>7</td>
+                <td><b>Rowspan</b>
+                <p>This property is used to make a cell span more than one row</p></td>
+   <td>&lt th rowspan="2" &gt /th&gt</td>             
+                
+                </tr>
+                <tr>
+                <td>8</td>
+                <td><b>Caption</b>
+                <p>This property is used to add a caption to the table</p>
+                </td>
+                <td>&lt caption &gt Monthly savings &lt/caption &gt </td>
+                </tr>
+                
+                <tr>
+                <td>9</td>
+                <td><b>Special style</b>
+                <p>This property is used to add special style to the table. The attribute used is id.</p>
+                </td>
+               
+               
+               
+               
+               
+              <td> table#t01 <br> {
+    width: 100%; 
+    background-color: #f1f1c1;
+}<br>
+                &lt table li="t01" &gt
+                
+                </td>
+                </tr>
+			</table><br>
+			
+            
+               <h2>Table Heading </h2> 
+               Table heading can be defined using &ltth&gt tag. This tag will be put to replace &lttd&gt tag, which is used to represent actual data cell. Normally you will put your top row as table heading as shown below, otherwise you can use &ltth&gt element in any row. Headings, which are defined in &ltth&gt tag are centered and bold by default.
+             
+			<fieldset>
+			<legend>Example</legend><br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font color="white"> HTML Table Header</font>  <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				 &lttable border = "1"&gt<br>
+         &lttr&gt<br>
+            &ltth&gt<font color="white">Name</font>&lt/th&gt<br>
+            &ltth&gt<font color="white">Salary</font>&lt/th&gt<br>
+         &lt/tr&gt<br>
+         &gttr&lt<br>
+            &lttd&gt<font color="white">No Mercy</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">5000</font>&lttd&gt<br>
+         &lt/tr&gt<br>
+         
+         &gttr&lt<br>
+            &lttd&gt<font color="white">Pandey</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">7000</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt<br>
+				
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+				</fieldset>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<html>
+
+   <head>
+      <title>HTML Table Header</title>
+   </head>
+	
+   <body>
+      <table border = "1">
+         <tr>
+            <th>Name</th>
+            <th>Salary</th>
+         </tr>
+         <tr>
+            <td>No Mercy</td>
+            <td>5000</td>
+         </tr>
+         
+         <tr>
+            <td>Pandey</td>
+            <td>7000</td>
+         </tr>
+      </table>
+   </body>
+   
+</html>
+			</div>
+			</fieldset>
+
+<h1><u>Cellpadding and Cellspacing Attributes</u></h1>
+There are two attributes called cellpadding and cellspacing which you will use to adjust the white space in your table cells. The cellspacing attribute defines space between table cells, while cellpadding represents the distance between cell borders and the content within a cell.
+<fieldset>
+			<legend>Example</legend><br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font color="white">HTML Table Cellpadding</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				 &lttable border = "1" cellpadding = "5" cellspacing = "5"&gt<br>
+         &lttr&gt<br>
+            &ltth&gt<font color="white">Name</font>&lt/th&gt<br>
+            &ltth&gt<font color="white">Salary</font>&lt/th&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<font color="white">No Mercy</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">5000</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<font color="white">Pandey</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">7000></font>s&lt/td&gt<br>
+         &lt/tr&gt<br>				
+		&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+				</fieldset>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<html>
+
+   <head>
+      <title>HTML Table Cellpadding</title>
+   </head>
+	
+   <body>
+      <table border = "1" cellpadding = "5" cellspacing = "5">
+         <tr>
+            <th>Name</th>
+            <th>Salary</th>
+         </tr>
+         <tr>
+            <td>No Mercy</td>
+            <td>5000</td>
+         </tr>
+         <tr>
+            <td>Pandey</td>
+            <td>7000</td>
+         </tr>
+      </table>
+   </body>
+	
+</html>
+			</div>
+			</fieldset>
+
+<h1><u>Colspan and Rowspan Attributes</u></h1>
+You will use <b>colspan</b> attribute if you want to merge two or more columns into a single column. Similar way you will use <b>rowspan</b> if you want to merge two or more rows.
+<fieldset>
+			<legend>Example</legend><br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font color="white"> HTML Table Colspan/Rowspan</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				 &lttable border = "1"&gt<br>
+         &lttr&gt<br>
+                     &ltth&gt<font color="white">Column 1</font>&lt/th&gt<br>
+            &ltth&gt<font color="white">Column 2</font>&lt/th&gt<br>
+            &ltth&gt<font color="white">Column 3
+                </font>&lt/th&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd rowspan = "2"&gt<font color="white">Row 1 Cell 1</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">Row 1 Cell 2</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">Row 1 Cell 3</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<font color="white">Row 2 Cell 2</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">Row 2 Cell 3</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd colspan = "3"&gt<font color="white"> 3 Cell 1</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt	<br>			
+		&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+				</fieldset>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<html>
+
+   <head>
+      <title>HTML Table Colspan/Rowspan</title>
+   </head>
+	
+   <body>
+      <table border = "1">
+         <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+         </tr>
+         <tr>
+            <td rowspan = "2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+         </tr>
+         <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+         </tr>
+         <tr>
+            <td colspan = "3">Row 3 Cell 1</td>
+         </tr>
+      </table>
+   </body>
+	
+</html>
+			</div>
+			</fieldset>
+
+
+			<h1><u>Tables Backgrounds</u></h1>
+You can set table background using one of the following two ways −<br>
+<br>
+<b>bgcolor</b> attribute − You can set background color for whole table or just for one cell.<br>
+<br>
+<b>background</b> attribute − You can set background image for whole table or just for one cell.<br>
+<br>
+You can also set border color also using bordercolor attribute.<br>
+<br>
+<fieldset>
+<b>Note:</b>The bgcolor, background, and bordercolor attributes deprecated in HTML5. Do not use these attributes.
+</fieldset>
+<fieldset>
+			<legend>Example</legend><br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font color="white">HTML Table Background</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				&lttable border = "1" bordercolor = "green" bgcolor = "yellow"&gt<br>
+         &lttr&gt<br>
+            &ltth&gt<font color="white">Column 1</font>&lt/th&gt<br>
+            &ltth&gt<font color="white">Column 2</font>&lt/th&gt<br>
+            &ltth&gt<font color="white"> Column 3</font>&lt/th&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd rowspan = "2"&gt<font color="white">Row 1 Cell 1</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">Row 1 Cell 2</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">Row 1 Cell 3</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<font color="white">Row 2 Cell 2</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">Row 2 Cell 3</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd colspan = "3"&gt<font color="white">Row 3 Cell 1</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt		<br>		 
+		&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+				</fieldset>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<html>
+
+   <head>
+      <title>HTML Table Background</title>
+   </head>
+  
+   <body>
+      <table border = "1" bordercolor = "green" bgcolor = "yellow">
+         <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+         </tr>
+         <tr>
+            <td rowspan = "2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+         </tr>
+         <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+         </tr>
+         <tr>
+            <td colspan = "3">Row 3 Cell 1</td>
+         </tr>
+      </table>
+   </body>
+  
+</html>
+			</div>
+			</fieldset>
+
+
+
+
+
+      Here is an example of using <b>background</b> attribute. Here we will use an image available in /images directory.
+      <fieldset>
+      <legend>Example</legend><br>
+      <div class="example">
+      <p>
+        
+        &lt html &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">HTML Table Background</font> <br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+        &lttable border = "1" bordercolor = "green" background = "/images/test.png"&gt<br>
+         &lttr&gt<br>
+            &ltth&gt<font color="white">Column 1</font>&lt/th&gt<br>
+            &ltth&gt<font color="white">Column 2</font>&lt/th&gt<br>
+            &ltth&gt<font color="white">Column 3</font>&lt/th&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd rowspan = "2"&gt<font color="white">Row 1 Cell 1</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">Row 1 Cell 2</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">Row 1 Cell 3</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<font color="white">Row 2 Cell 2</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">Row 2 Cell 3</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd colspan = "3"&gt<font color="white">Row 3 Cell 1</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt    <br>     
+    &nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+        &lt /html &gt <br>
+        </fieldset>
+      <fieldset>
+      <legend>Output</legend><br>
+      <div class="output">
+       <html>
+
+   <head>
+      <title>HTML Table Background</title>
+   </head>
+  
+   <body>
+      <table border = "1" bordercolor = "green" background = "data:image/jpeg;base64,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">
+         <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+         </tr>
+         <tr>
+            <td rowspan = "2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td><td>Row 1 Cell 3</td>
+         </tr>
+         <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+         </tr>
+         <tr>
+            <td colspan = "3">Row 3 Cell 1</td>
+         </tr>
+      </table>
+   </body>
+  
+</html>
+      </div>
+      </fieldset>
+      <h1><u>Table Height and Width</u></h1>
+You can set a table width and height using <b>width</b> and <b>height</b> attributes. You can specify table width or height in terms of pixels or in terms of percentage of available screen area.
+<fieldset>
+      <legend>Example</legend><br>
+      <div class="example">
+      <p>
+        
+        &lt html &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font color="white">HTML Table Colspan/Rowspan</font><br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+        
+          &lttable border = "1" width = "400" height = "150"&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<font color="white">Row 1, Column 1</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">Row 1, Column 2</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         <br>
+         &lttr&gt<br>
+            &lttd&gt<font color="white">Row 2, Column 1</font>&lt/td&gt<br>
+            &lttd&gt<font color="white">Row 2, Column 2</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt<br>
+      &nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+        &lt /html &gt <br>
+        </fieldset>
+      <fieldset>
+      <legend>Output</legend><br>
+      <div class="output">
+       <html>
+
+   <head>
+      <title>HTML Table Width/Height</title>
+   </head>
+  
+   <body>
+      <table border = "1" width = "400" height = "150">
+         <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+         </tr>
+         
+         <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+         </tr>
+      </table>
+   </body>
+  
+</html>
+      </div>
+      </fieldset>

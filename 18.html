@@ -1,0 +1,952 @@
+<html>
+	<head>
+		<title>
+			FORM TAGS
+		</title>
+	</head>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<body>
+	<div class="navbar">
+  <a href="Proj.html">Home</a>
+  <a href="overview.html">Overview</a> 
+  <a href="tutos.html">Credits</a> 
+  <div class="subnav">
+    <button class="subnavbtn">Course Handout <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a style="color:black" href="1.html">Basic Tags</a>
+      <a style="color:black" href="2.html">Elements</a>
+      <a style="color:black" href="3.html">Attributes</a>
+      <a style="color:black" href="4.html">Formatting Tags</a>
+      <a style="color:black" href="5.html">Phase Tags</a>
+      <a style="color:black" href="6.html">Meta Tag</a>
+      <a style="color:black" href="7.html">Comments</a>
+      <a style="color:black" href="8.html">Images</a>
+      <a style="color:black" href="9.html">Table</a>
+      <a style="color:black" href="10.html">List</a>
+      <a style="color:black" href="11.html">Frames</a>
+      <a style="color:black" href="12.html">Background</a>
+      <a style="color:black" href="13.html">Colors</a>
+      <a style="color:black" href="14.html">Links</a>
+      <a style="color:black" href="15.html">Marquee</a>
+      <a style="color:black" href="16.html">Header</a>
+      <a style="color:black" href="17.html">Fonts</a>
+      <a style="color:black" href="18.html">Forms</a>
+    
+    </div>
+  </div>
+  <a href="feedback.html">Feedback</a>
+</div>
+	<br>
+	<div class="pan">
+		<div>
+			<h1><p style="border: 2px solid red;margin-left:450px;font-family:verdana;border-radius:25px;color:black;padding:5px;text-align:center;margin-right:450px;background-color:red">HTML-FORMS</p></h1>
+		</div>
+		<hr>
+		<hr>
+		<div class="briefing">
+			<h2><u>INTRODUCTION</u></h2>
+			<br>
+			<p> HTML Forms are required, when you want to collect some data from the site visitor. For example, during user registration you would like to collect information such as name, email address, credit card, etc.</p>
+
+			<p>A form will take input from the site visitor and then will post it to a back-end application such as CGI, ASP Script or PHP script etc. The back-end application will perform required processing on the passed data based on defined business logic inside the application.</p>
+
+			<p>There are various form elements available like text fields, textarea fields, drop-down menus, radio buttons, checkboxes, etc.</p>
+
+			<p>The HTML &ltform&gt tag is used to create an HTML form and it has following syntax </p>
+         	<div class="example">
+            &ltform action ="Script URL" method ="GET|POST"&gt  <br>
+            &nbsp &nbsp &nbsp &nbsp form elements like input, textarea etc. <br>
+            &lt/form&gt
+       		 </div>
+		</div>
+		<hr>
+
+		<div class="tagdescription">
+			<h2><u>Form attributes</u></h2>
+			<p>Apart from common attributes, following is a list of the most frequently used form attributes </p>
+			<hr>
+			<table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Form Attributes</th>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td><b>Action</b><br>
+						<p>Backend script ready to process your passed data
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>method</b><br>
+						<p>Method to be used to upload data. The most frequently used are GET and POST methods.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>3</td>
+					<td><b>Target</b><br>
+						<p> Specify the target window or frame where the result of the script will be displayed. It takes values like _blank, _self, _parent etc.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>4</td>
+					<td><b>Enctype</b><br>
+						<p>You can use the enctype attribute to specify how the browser encodes the data before it sends it to the server. Possible values are −<br>
+							application/x-www-form-urlencoded −This is the standard method most forms use in simple scenarios.
+							mutlipart/form-data −This is used when you want to upload binary data in the form of files like image, word file etc.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>5</td>
+					<td><b>Max_Length</b><br>
+						<p>Allows to specify the maximum number of characters a user can enter into the text box.
+					</td>
+				</tr>
+			</table>
+			<hr><br>
+			<h2>HTML Form Controls </h2>
+			<p>There are different types of form controls that you can use to collect data using HTML form −
+				<li>Text Input controls</li>
+				<li>Checkboxes controls</li>
+				<li>Radio box controls</li>
+				<li>Select box controls</li>
+				<li>File select boxes</li>
+				<li>Hidden controls</li>
+				<li>Clickable buttons</li>
+				<li>Submit and Reset button</li>
+			</p>
+		<div class="attributes">
+			<h2><u>TEXT INPUT CONTROLS</u></h2>
+			<p>There are three types of text input used on forms </p>
+			<li><b>Single-line text input controls</b> − This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML &ltinput&gt tag.</li>
+			<br>
+			<li><b>Password input controls</b> − This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTMl &ltinput&gt tag.</li>
+			<br>
+			<li><b>Multi-line text input controls</b> − This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML &lttextarea&gt tag.</li>
+			<h1><u>Single line text input controls</u></h1>
+			This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML &ltinput&gt tag.
+			<h2>Example</h2><br>
+			<p>Here is a basic example of a single-line text input used to take first name and last name −</p>
+			<br>
+
+			<fieldset>
+			<legend>Example</legend><br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Example <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt h2 &gt <br> 
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp This is an example of form tag.<br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /h2 &gt &lt br &gt <br>
+			    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt form &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp First Name: &nbsp &lt input &nbsp type="text" &nbsp name="first_name" &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Last Name: &nbsp &lt input &nbsp type="text" &nbsp name="last_name" &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /form &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</fieldset>
+			</div>	
+			
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of form tag.</h2><br>
+					<form >
+       					  First name: <input type = "text" name = "first_name" />
+       					  <br>
+         					Last name: <input type = "text" name = "last_name" />
+     				 </form>
+				</p>
+			</div>
+			</fieldset>
+		</div>
+		<h1><u>Attributes</u></h1>
+		<hr>
+		<div class="attributes">
+			<table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Attributes and Description</th>
+				</tr>
+				Following is the list of attributes for &ltinput&gt tag for creating text field.
+				<tr>
+					<td>1</td>
+					<td><b>type</b><br>
+						<p>Indicates the type of input control and for text input control it will be set to text.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>name</b><br>
+						<p> Used to give a name to the control which is sent to the server to be recognized and get the value.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>3</td>
+					<td><b>Value</b><br>
+						<p> This can be used to provide an initial value inside the control.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>4</td>
+					<td><b>Size</b><br>
+						<p>Allows to specify the width of the text-input control in terms of characters.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>5</td>
+					<td><b>Max_Length</b><br>
+						<p>Allows to specify the maximum number of characters a user can enter into the text box.
+					</td>
+				</tr>
+			</table><br>
+            <h1><u>Password input controls</u></h1>
+            <p>This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTML &ltinput&gt tag but type attribute is set to password.</p>
+            <h2>Example</h2>
+            Here is a basic example of a single-line password input used to take user password −
+			<fieldset>
+			<legend>Example</legend><br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Password Input Control <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt form &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp USER ID:  &lt input type = "text" name = "user_id"/ &gt
+				&nbsp &nbsp <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &ltbr&gt <br>
+			    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Password: &lt input type ="password" name ="password"/ &gt<br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt/form&gt<br>
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</div>	
+			</fieldset>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result</h2><br>
+					<form >
+       				Description : <br />User ID : <input type = "text" name = "user_id" />
+         <br>
+         Password: <input type = "password" name = "password" />
+     				 </form>
+				</p>
+			</div>
+			</fieldset>
+            <h1><u>Attributes</u></h1>
+		<hr>
+		<div class="attributes">
+			<table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Attributes and Description</th>
+				</tr>
+				Following is the list of attributes for &ltinput&gt tag for creating password field.
+				<tr>
+					<td>1</td>
+					<td><b>type</b><br>
+						<p>Indicates the type of input control and for password input control it will be set to <b>password</b>.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>name</b><br>
+						<p> Used to give a name to the control which is sent to the server to be recognized and get the value.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>3</td>
+					<td><b>Value</b><br>
+						<p> This can be used to provide an initial value inside the control.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>4</td>
+					<td><b>Size</b><br>
+						<p>Allows to specify the width of the text-input control in terms of characters.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>5</td>
+					<td><b>Max_Length</b><br>
+						<p>Allows to specify the maximum number of characters a user can enter into the text box.
+					</td>
+				</tr>
+			</table>
+			<h1><u>Multiple-Line Text Input Controls</u></h1>
+			This is used when the user is required to give details that may be<br> longer than a single sentence. <br>Multi-line input controls are created using HTML &lttextarea&gt tag.
+			<fieldset>
+				<legend><h2>Example</h2></legend>
+			Here is a basic example of a multi-line text input used to take item description −
+		   	<div class="example">
+				&lthtml&gt <br>
+				&nbsp &nbsp &nbsp &nbsp  &lthead&gt <br>
+			    &lttitle&gtMultiple-Line Input Control	&lt/title&gt<br>
+                &nbsp &nbsp &nbsp &nbsp &lt/head&gt <br>
+                &nbsp &nbsp &ltbody&gt <br>
+                &ltform&gt <br>
+                	description: &ltbr/&gt<br>
+                	&ltTextarea rows ="5" cols="50"name="description"&gt<br>
+                	Enter description here.........<br>
+                	&lt/textarea&gt<br>
+                &lt/form&gt<br>
+                &nbsp &nbsp &lt/body&gt<br>
+                	&lt/html&gt<br>
+                    </div class="example">
+			    </fieldset>
+			    <fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result</h2><br>
+					<form >
+       				Description : <br />
+         &nbsp &nbsp<textarea rows = "5" cols = "50" name = "description">
+            Enter description here...
+         </textarea>
+     				 </form>
+				</p>
+			</div>
+			</fieldset>
+			<hr>
+            <h1><u>Attributes</u></h1>
+		<div class="attributes">
+			<table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Attributes and Description</th>
+				</tr>
+				Following is the list of attributes for &ltinput&gt tag for creating password field.
+				<tr>
+					<td>1</td>
+					<td><b>name</b><br>
+						<p> Used to give a name to the control which is sent to the server to be recognized and get the value.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>rows</b><br>
+						<p> Indicates the number of rows of text area box.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>3</td>
+					<td><b>cols</b><br>
+						<p>Indicates the number of columns of text area box.
+					</td>
+				</tr>
+			</table>
+			<h1><u>Checkbox control</u></h1>
+			Checkboxes are used when more than one option is required to be selected. They are also created using HTML &ltinput&gt tag but type attribute is set to checkbox..
+			<fieldset>
+			<legend><h2>Example</h2></legend>
+			Here is an example HTML code for a form with two checkboxes −
+            	<div class="example">
+				&lthtml&gt <br>
+				&nbsp &nbsp &nbsp &nbsp  &lthead&gt <br>
+			    &lttitle&gt Checkbox Control	&lt/title&gt<br>
+                &nbsp &nbsp &nbsp &nbsp &lt/head&gt <br>
+                &nbsp &nbsp &ltbody&gt <br>
+                &ltform&gt <br>
+                	&ltinputtype= "checkbox" name="maths"value="on"&gt Maths
+                	&ltinputtype= "checkbox" name="physics"value="on"&gt physics
+                &lt/form&gt<br>
+                &nbsp &nbsp &lt/body&gt<br>
+                	&lt/html&gt<br>
+                    </div class="example">
+		            </fieldset>
+                    <fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result</h2><br>
+					<form >
+       			    <input type = "checkbox" name = "maths" value = "on"> Maths
+         <input type = "checkbox" name = "physics" value = "on"> Physics
+     				 </form>
+				</p>
+			</div>
+			</fieldset>
+            <h1><u>Attributes</u></h1>
+		<hr>
+		<div class="attributes">
+			<table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Attributes and Description</th>
+				</tr>
+				Following is the list of attributes for &ltinput&gt tag for creating password field.
+				<tr>
+					<td>1</td>
+					<td><b>type</b><br>
+						<p> Indicates the type of input control and for checkbox input control it will be set to checkbox..
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>name</b><br>
+						<p> Used to give a name to the control which is sent to the server to be recognized and get the value.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>3</td>
+					<td><b>value</b><br>
+						<p>The value that will be used if the checkbox is selected.
+					</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td><b>Checked</b><br>
+						<p>Set to checked if you want to select it by default.
+					</td>
+				</tr>
+			</table>
+				<h1><u>Radio button control </u></h1>
+				<p>Radio buttons are used when out of many options, just one option is required to be selected. They are also created using HTML &ltinput&gt tag but type attribute is set to radio.</p>
+				<fieldset>
+			<legend><h2>Example</h2></legend>
+				Here is example HTML code for a form with two radio buttons −
+				<div class="example">
+			
+
+				&lthtml&gt <br>
+				&nbsp &nbsp &nbsp &nbsp  &lthead&gt <br>
+			    &lttitle&gt Radio box Control	&lt/title&gt<br>
+                &nbsp &nbsp &nbsp &nbsp &lt/head&gt <br>
+                &nbsp &nbsp &ltbody&gt <br>
+                &ltform&gt <br>
+                	&ltinput type= "radio" name="subject"value="maths"&gt Maths<br>
+                	&ltinput type= "radio" name="subject"value="physics"&gt physics<br>
+                &lt/form&gt<br>
+                &nbsp &nbsp &lt/body&gt<br>
+                	&lt/html&gt<br>
+                    </div class="example">
+		            </fieldset>
+                      <fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result</h2><br>
+					<form >
+       			    <input type = "radio" name = "subject" value = "maths"> Maths
+         <input type = "radio" name = "subject" value = "physics"> Physics
+     				 </form>
+				</p>
+			</div>
+			</fieldset>
+            <h1><u>Attributes</u></h1>
+		<hr>
+		<div class="attributes">
+			<table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Attributes and Description</th>
+				</tr>
+	                Following is the list of attributes for radio button.
+				<tr>
+					<td>1</td>
+					<td><b>type</b><br>
+						<p>Indicates the type of input control and for text input control it will be set to radio.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>name</b><br>
+						<p> Used to give a name to the control which is sent to the server to be recognized and get the value.
+					</td>
+				</td>
+				<tr>
+					<td>3</td>
+					<td><b>Value</b><br>
+						<p> The value that will be used if the radio box is selected.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>4</td>
+					<td><b>Checked</b><br>
+						<p>Set to checked if you want to select it by default.
+					</td>
+				</tr>
+			</table><br>
+                     <h1><u>Select box control </u></h1>
+				<p>A select box, also called drop down box which provides option to list down various options in the form of drop down list, from where a user can select one or more options..</p>
+				<fieldset>
+			<legend><h2>Example</h2></legend>
+				Here is example HTML code for a form with one drop down box
+				<div class="example">
+
+				&lthtml&gt <br>
+				&nbsp &nbsp &nbsp &nbsp  &lthead&gt <br>
+			    &lttitle&gt Select box Control	&lt/title&gt<br>
+                &nbsp &nbsp &nbsp &nbsp &lt/head&gt <br>
+                &nbsp &nbsp &ltbody&gt <br>
+                &ltform&gt <br>
+                	&ltselect name="dropdown"&gt
+                	&ltoption value="Maths" selected&gt Maths &lt/option&gt
+                	&ltoption value="Physics"&gt Maths &lt/option&gt
+                	&ltselect&gt <br>
+                &lt/form&gt<br>
+                &nbsp &nbsp &lt/body&gt<br>
+                	&lt/html&gt<br>
+                    </div class="example">
+		            </fieldset>
+		            <fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result</h2><br>
+					<form >
+       			    <select name = "dropdown">
+            <option value = "Maths" selected>Maths</option>
+            <option value = "Physics">Physics</option>
+         </select>
+     				 </form>
+				</p>
+			</div>
+			</fieldset>
+			<h1><u>Attributes</u></h1>
+            <div class="attributes">
+			<table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Attributes and Description</th>
+				</tr>
+				Following is the list of attributes of Important attributes of &ltselect&gt tag-
+				<tr>
+					<td>1</td>
+					<td><b>name</b><br>
+						<p> Used to give a name to the control which is sent to the server to be recognized and get the value.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>size</b><br>
+						<p> This can be used to present a scrolling list box.
+				</tr>
+				
+				<tr>
+					<td>3</td>
+					<td><b>multiple</b><br>
+						<p>If set to "multiple" then allows a user to select multiple items from the menu.
+					</td>
+				</tr>
+			</table>
+			<div class="attributes">
+			<table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+		    <th>Attributes and Description</th>
+				</tr>
+				Following is the list of attributes of Important attributes of &ltselect&gt tag-
+				<tr>
+					<td>1</td>
+					<td><b>value</b><br>
+						<p> The value that will be used if an option in the select box box is selected.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>selected</b><br>
+						<p>Specifies that this option should be the initially selected value when the page loads.
+				</tr>
+				
+				<tr>
+					<td>3</td>
+					<td><b>label</b><br>
+						<p>An alternative way of labeling options
+					</td>
+				</tr>
+			</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1><u>File Upload Box</u></h1>
+			If you want to allow a user to upload a file to your web site, you will need to use a file upload box, also known as a file select box. This is also created using the &ltinput&gt element but type attribute is set to file.
+			<fieldset>
+			<legend><h2>Example</h2></legend>
+			Here is example HTML code for a form with one file upload box −
+            	<div class="example">
+			<fieldset>
+				&lthtml&gt <br>
+				&nbsp &nbsp &nbsp &nbsp  &lthead&gt <br>
+			    &lttitle&gt File upload box	&lt/title&gt<br>
+                &nbsp &nbsp &nbsp &nbsp &lt/head&gt <br>
+                &nbsp &nbsp &ltbody&gt <br>
+                &ltform&gt <br>
+                	&ltinput type="file"name="fileuplaod"accept="image/*/&gt
+                &lt/form&gt<br>
+                &nbsp &nbsp &lt/body&gt<br>
+                	&lt/html&gt<br>
+                    </div class="example">
+		            </fieldset>
+                    <fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result</h2><br>
+					<form >
+       			   <input type = "file" name = "fileupload" accept = "image/*" />
+     				 </form>
+				</p>
+			</div>
+			</fieldset>
+            <h1><u>Attributes</u></h1>
+		<hr>
+		<div class="attributes">
+			<table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Attributes and Description</th>
+				</tr>
+				Following is the list of attributes for &ltinput&gt tag for creating password field.
+				<tr>
+					<td>1</td>
+					<td><b>name</b><br>
+						<p> Used to give a name to the control which is sent to the server to be recognized and get the value.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>Accept</b><br>
+						<p> Specifies the types of files that the server accepts.
+					</td>
+				</tr>
+			</table>
+			<h1><u>Button controls</u></h1>
+			There are various ways in HTML to create clickable buttons. You can also create a clickable button using &ltinput&gt tag by setting its type attribute to button. The type attribute can take the following values −
+			</fieldset>
+		<hr>
+		<div class="attributes">
+			<table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Type and Description</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td><b>Submit</b><br>
+						<p> This creates a button that automatically submits a form.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>Reset</b><br>
+						<p> This creates a button that automatically resets form controls to their initial values.
+					</td>
+				</tr>
+					<tr>
+					<td>3</td>
+					<td><b>Button</b><br>
+						<p> This creates a button that is used to trigger a client-side script when the user clicks that button.
+
+
+					</td>
+				</tr>
+				<tr>
+				<td>2</td>
+				<td><b>Image</b><br>
+					<p> This creates a clickable button but we can use an image as background of the button.
+				</td>
+				</tr>
+			</table>
+			<fieldset>
+			<legend><h2>Example</h2></legend>
+			Here is example HTML code for a form with three types of buttons −
+			<div class="example">
+				&lthtml&gt <br>
+				&nbsp &nbsp &nbsp &nbsp  &lthead&gt <br>
+			    &lttitle&gt File upload box	&lt/title&gt<br>
+                &nbsp &nbsp &nbsp &nbsp &lt/head&gt <br>
+                &nbsp &nbsp &ltbody&gt <br>
+                &ltform&gt <br>
+                	&ltinput type="submit"name="submit"value="submit/&gt
+                	&ltinput type="reset"name="reset"value="reset/&gt
+                	&ltinput type="button"name="ok"value="ok/&gt
+                	&ltinput type="image"name="imagebutton"src="Flower.jpg"/&gt
+                &lt/form&gt<br>
+                &nbsp &nbsp &lt/body&gt<br>
+                	&lt/html&gt<br>
+                    </div class="example">
+		            </fieldset>
+                    <fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result</h2><br>
+					<form >
+       			 <input type = "submit" name = "submit" value = "Submit" />
+         <input type = "reset" name = "reset"  value = "Reset" />
+         <input type = "button" name = "ok" value = "OK" />
+         
+     				 </form>
+				</p>
+			</div>
+			</fieldset>
+			
+
+			<h1><u>Hidden from Controls</u></h1>
+			Hidden form controls are used to hide data inside the page which later on can be pushed to the server. This control hides inside the code and does not appear on the actual page. For example, following hidden form is being used to keep current page number. When a user will click next page then the value of hidden control will be sent to the web server and there it will decide which page will be displayed next based on the passed current page.
+			<fieldset>
+			<legend><h2>Example</h2></legend>
+			Here is example HTML code to show the usage of hidden control −
+
+			<div class="example"/>
+           
+				&lthtml&gt <br>
+				&nbsp &nbsp &nbsp &nbsp  &lthead&gt <br>
+			    &lttitle&gt File upload box	&lt/title&gt<br>
+                &nbsp &nbsp &nbsp &nbsp &lt/head&gt <br>
+                &nbsp &nbsp &ltbody&gt <br>
+                &ltform&gt <br>
+                &ltp&gtThis is page 10 &lt/p&gt
+                	&lt input type="hidden"name="pagename"value="10"/ &gt
+                	&lt input type="submit"name="submit"value="submit"/ &gt
+                	&lt input type="reset"name="reset"value="reset"/ &gt
+                &lt/form&gt<br>
+                &nbsp &nbsp &lt/body&gt<br>
+                	&lt/html&gt<br>
+                    </div>
+		            </fieldset>
+                    <fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the following result</h2><br>
+					<form >
+       			 <p>This is page 10</p>
+         <input type = "hidden" name = "pagename" value = "10" />
+         <input type = "submit" name = "submit" value = "Submit" />
+         <input type = "reset" name = "reset"  value = "Reset" />
+     				 </form>
+				</p>
+			</div>
+			</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

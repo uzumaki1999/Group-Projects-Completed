@@ -1,0 +1,533 @@
+<html>
+	<head>
+		<title>
+			HTML-Marquees
+		</title>
+	</head>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<body>
+	<div class="navbar">
+  <a href="Proj.html">Home</a>
+  <a href="overview.html">Overview</a> 
+  <a href="tutos.html">Credits</a> 
+  <div class="subnav">
+    <button class="subnavbtn">Course Handout <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a style="color:black" href="1.html">Basic Tags</a>
+      <a style="color:black" href="2.html">Elements</a>
+      <a style="color:black" href="3.html">Attributes</a>
+      <a style="color:black" href="4.html">Formatting Tags</a>
+      <a style="color:black" href="5.html">Phase Tags</a>
+      <a style="color:black" href="6.html">Meta Tag</a>
+      <a style="color:black" href="7.html">Comments</a>
+      <a style="color:black" href="8.html">Images</a>
+      <a style="color:black" href="9.html">Table</a>
+      <a style="color:black" href="10.html">List</a>
+      <a style="color:black" href="11.html">Frames</a>
+      <a style="color:black" href="12.html">Background</a>
+      <a style="color:black" href="13.html">Colors</a>
+      <a style="color:black" href="14.html">Links</a>
+      <a style="color:black" href="15.html">Marquee</a>
+      <a style="color:black" href="16.html">Headder</a>
+      <a style="color:black" href="17.html">Fonts</a>
+      <a style="color:black" href="18.html">Forms</a>
+    
+    </div>
+  </div>
+  <a href="feedback.html">Feedback</a>
+</div>
+	<br>
+	<div class="pan">
+		<div>
+			<center><h1><p style="border: 2px solid red;font-family:verdana;margin-left:450px;border-radius:25px;color:black;padding:5px;text-align:center;margin-right:450px;background-color:red">HTML-MARQUEES</p></h1></center>
+		</div>
+		<hr>
+		<hr>
+		<div class="briefing">
+			<h2><u>INTRODUCTION</u></h2>
+			<br>
+			An HTML marquee is a scrolling piece of text displayed either horizontally across or vertically down your webpage depending on the settings. This is created by using HTML &ltmarquees&gt tag.<br>
+            <br>                                     
+            <b>Note :</b> The &ltmarquee&gt tag deprecated in HTML5. Do not use this element, instead you can use JavaScript and CSS to create such effects.
+            
+            <h1><u>Syntax</u></h1>
+            A simple syntax to use HTML &ltmarquee&gt tag is as follows −
+            <br>
+            <fieldset>
+            	&ltmarquee attribute_name = "attribute_value"....more attributes&gt<br>
+ 				&nbsp &nbsp &nbsp &nbsp  One or more lines or text message or image<br>
+				&lt/marquee&gt
+            </fieldset>
+            <h1><u>The &ltmarquee&gt Tag Attributes</u></h1>
+            Following is the list of important attributes which can be used with<br>
+             &ltmarquee&gt tag.
+             <table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Attributes and Description</th>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td><b>Width</b><br>
+						<p>This specifies the width of the marquee. This can be a value like 10 or 20% etc.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>Height</b><br>
+						<p>This specifies the height of the marquee. This can be a value like 10 or 20% etc.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>3</td>
+					<td><b>Direction</b><br>
+						<p> This specifies the direction in which marquee should scroll. This can be a value like up, down, left or right.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>4</td>
+					<td><b>Behaviour</b><br>
+						This specifies the type of scrolling of the marquee. This can have a value like scroll, slide and alternate.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>5</td>
+					<td><b>Scrolldelay</b><br>
+						<p>This specifies how long to delay between each jump. This will have a value like 10 etc.
+					</td>
+
+				</tr>
+				<tr>
+					<td>6</td>
+					<td><b>Scrollamount</b><br>
+						<p>This specifies the speed of marquee text. This can have a value like 10 etc.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>7</td>
+					<td><b>Loop</b><br>
+						<p>This specifies how many times to loop. The default value is INFINITE, which means that the marquee loops endlessly.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>8</td>
+					<td><b>bgcolor</b><br>
+						<p> This specifies background color in terms of color name or color hex value.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>9</td>
+					<td><b>hspace</b><br>
+						This specifies horizontal space around the marquee. This can be a value like 10 or 20% etc.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>10</td>
+					<td><b>vspace</b><br>
+						This specifies vertical space around the marquee. This can be a value like 10 or 20% etc.
+					</td>
+					
+				</tr>
+			</table>
+             <br>
+<br>
+             Below are few examples to demonstrate the usage of marquee tag.
+
+
+              <h2>Example-1</h2>
+			<fieldset>
+			<legend>Example</legend><br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp HTML Marquee Tag <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+			     &ltmarquee&gtThis is basic example of marquee&lt/marquee&gt<br>  
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</div>	
+			</fieldset>
+            <h4>This will produce the following result −</h4>
+            <fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<html>
+
+   <head>
+      <title>HTML marquee Tag</title>
+   </head>
+	
+   <body>
+      <marquee><b>This is basic example of marquee</b></marquee>
+   </body>
+	
+</html>
+			</div>
+			</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Example-2</h2>
+			<fieldset>
+			<legend>Example</legend><br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp HTML Marquee Tag <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+			   &ltmarquee width = "50%"&gtThis example will take only 50% width&lt/marquee&gt<br>
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</div>	
+			</fieldset>
+            <h4>This will produce the following result −</h4>
+            <fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<html>
+
+   <head>
+      <title>HTML marquee Tag</title>
+   </head>
+	
+   <body>
+     <marquee width = "50%"><b>This example will take only 50% width</b></marquee>
+   </body>
+	
+</html>
+			</div>
+			</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <h2>Example-3</h2>
+			<fieldset>
+			<legend>Example</legend><br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp HTML Marquee Tag <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+			   &ltmarquee direction = "up"&gtThis text will scroll from bottom to up&lt/marquee&gt<br>
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</div>	
+			</fieldset>
+            <h4>This will produce the following result −</h4>
+            <fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<html>
+
+   <head>
+      <title>HTML marquee Tag</title>
+   </head>
+	
+   <body>
+     <marquee direction = "up"><b>This text will scroll from bottom to up</b></marquee>
+   </body>
+	
+</html>
+			</div>
+			</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+<h2>Example-4</h2>
+			<fieldset>
+			<legend>Example</legend><br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp HTML Marquee Tag <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+			   &ltmarquee direction = "right"&gtThis text will scroll from left to right&lt/marquee&gt
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</div>	
+			</fieldset>
+            <h4>This will produce the following result −</h4>
+            <fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<html>
+
+   <head>
+      <title>HTML marquee Tag</title>
+   </head>
+	
+   <body>
+     <marquee direction = "right"><b>This text will scroll from left to right</b></marquee>
+   </body>
+	
+</html>
+			</div>
+			</fieldset>
+
+
+&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp<h3>*Page End*</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+
+
+

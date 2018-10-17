@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ul tag</title>
+</head><style>
+
+		body{
+		  background:url(bg7.jpg);
+		  color:rgba(224, 226, 219, 0.829);
+		  background-size:1350px 800px,auto;
+		  background-attachment:fixed;
+		
+		}
+		
+		fieldset{
+		  border: 2px solid black;
+		  background-color:rgba(0,0,0,0.6);
+		  border-radius:20px;
+		  padding: 2px;
+		
+		}
+		
+		.headder{
+		  border: 2px solid black;
+		  background-color:rgba(0,0,0,0.6);
+		  border-radius:20px;
+		  padding: 5px;
+		  color:black;
+		  text-align:center;
+		}
+		
+		.briefing{
+			border: 2px solid black;
+			background-color:rgba(0,0,0,0.6);
+			border-radius:20px;
+			padding: 5px;
+		  
+		}
+		
+		table, th, td {
+		  border: 1px solid orange;
+		  border-collapse: collapse;
+		}
+		.output{
+		  border: 2px solid black;
+		  background-color:rgba(255,255,255,0.5);
+		  border-style:solid;
+		  border-radius:10px;
+		  color:white;
+	  
+		}
+		</style>
+<body>
+	<h1><p style="border: 2px solid red;margin-left:450px;padding:5px;text-align:center;margin-right:450px;background-color:red"> Unordered List(ul)</p></h1>
+	<hr>
+	<hr>
+    <font size="+1">
+    <div>
+    <h2>Definition and Usage</h2>
+    <p>The &lt;ul&gt; tag defines an unordered (bulleted) list.</p>
+    <p>Use the &lt;ul&gt; tag together with the <a href="li.html">&lt;li&gt;</a> tag to 
+     create unordered lists.</p>
+    </div>
+        
+         <hr>
+         <div>
+	     <h2>Attributes</h2>
+<table class="w3-table-all notranslate" border="1" bgcolor="white"> 
+  <tr>
+    <th style="width:20%">Attribute</th>
+    <th style="width:20%">Value</th>
+    <th style="width:60%">Description</th>
+  </tr>
+  <tr>
+    <td>compact</td>
+    <td>compact</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>
+ Specifies that the list should render smaller than normal</td>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>disc<br>
+    square<br>
+    circle</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>
+ Specifies the kind of marker to use in the list</td>
+  </tr>
+</table>
+<hr>
+
+
+<div>
+	
+
+<h2>Unordered List Item Marker</h2>
+<p>The CSS <code class="w3-codespan">list-style-type</code> property is used to define the style of the 
+list item marker:</p>
+<table class="w3-table-all notranslate" border="1" bgcolor="white">
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>disc</td>
+<td>Sets the list item marker to a bullet (default)</td>
+</tr>
+<tr>
+<td>circle</td>
+<td>Sets the list item marker to a circle</td>
+</tr>
+<tr>
+<td>square</td>
+<td>Sets the list item marker to a square</td>
+</tr>
+<tr>
+<td>none</td>
+<td>The list items will not be marked</td>
+</tr>
+</table>
+</div>
+
+<div class="w3-example">
+<h3>Example - Disc</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ul style=&quot;list-style-type:disc&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</div>
+</div>
+
+	        <div>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of Disc unordered list</h2><br>
+					<ul style="list-style-type:disc">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+				</p>
+			</div>
+			</fieldset>
+		</div>
+
+<div class="w3-example">
+<h3>Example - Circle</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ul style=&quot;list-style-type:circle&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</div>
+</div>
+      
+ <div>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of Circle unordered list</h2><br>
+					<ul style="list-style-type:disc">
+
+<ul style="list-style-type:circle">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+	</p>
+			</div>
+			</fieldset>
+		</div>
+
+<div class="w3-example">
+<h3>Example - Square</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ul style=&quot;list-style-type:square&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</div>
+
+</div>
+
+<div>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of Square unordered list</h2><br>
+					
+<ul style="list-style-type:square">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+</p>
+			</div>
+			</fieldset>
+		</div>
+
+<div class="w3-example">
+<h3>Example - None</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ul style=&quot;list-style-type:none&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</div>
+
+</div>
+
+<div>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This is an example of None unordered list</h2><br>
+					
+<ul style="list-style-type:none">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+</p>
+			</div>
+			</fieldset>
+		</div>
+</font>
+</body>
+</html>

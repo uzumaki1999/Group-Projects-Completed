@@ -1,0 +1,248 @@
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #b75200;
+  border-radius: 50%;
+  border-top: 16px solid #000000;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 0.6s linear infinite;
+  animation: spin 0.6s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 1s;
+  animation-name: animatetop;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatetop {
+  from { top:-100px; opacity:0 } 
+  to { top:0px; opacity:1 }
+}
+
+@keyframes animatetop { 
+  from{ top:-100px; opacity:0 } 
+  to{ top:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+body
+{
+background-color:black;
+}
+body {margin:0;}
+
+.navbar {
+    
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top:0;
+    width:100%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(228, 113, 33);
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(228, 113, 33);
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top:90px;
+}
+.centered {
+    position: absolute;
+    top: 20%;
+    left: 50.6%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    border:solid 5px;
+    color: rgb(228, 113, 33);
+}
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -120px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 125px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    margin-top: :50px;
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+    top: 80px;
+    background-color: #4CAF50;
+}
+
+#blog {
+    top: 160px;
+    background-color: #2196F3; /* Blue */
+}
+
+.x
+{ width:1350px;
+  height:550px;
+}
+
+.heading{
+	
+	width:50%;
+	height:515px;
+}
+.text-block0 {
+    position: absolute;
+    width:fit-content;
+    bottom: 40%;
+    right: 43%;
+    background-color: rgba(0,0,0,0);
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border:3px solid ;
+    font-size: 20px;
+}
+.text-block1 {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    background-color: rgba(255,255,255,0.4);
+    border-radius:20px;
+	  height:200px;
+	  color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+	padding-bottom:50px;
+}
+
+.text-block2 {
+    position: absolute;
+    bottom: 15%;
+    right: 40%;
+    background-color: rgba(255,255,255,0.4);
+    height:200px;
+	color: black;
+     padding-left: 50px;
+    padding-right: 50px;
+	padding-bottom:50px;
+	border-radius:20px;
+
+}
+
+.text-block3 {
+    position: absolute;
+    bottom: 15%;
+    right: 70%;
+    background-color: rgba(255,255,255,0.4);
+    height:200px;
+	color: black;
+     padding-left: 50px;
+    padding-right: 50px;
+	padding-bottom:50px;
+    border-radius:20px;
+
+}
+.x1{
+  width:1000px;
+  height:500px;
+}
+.text1
+{
+    margin-right:40%;
+	margin-left:40%;
+    font-weight: bold;
+    font-size:30px;
+	text-align:center;
+    border:3px solid rgb(228, 113, 33);
+	color:rgb(228, 113, 33);
+   
+}
+#lower{
+ 
+  background:black;
+    width:1300px;
+  height:500px;
+  position: absolute;
+}
+
+

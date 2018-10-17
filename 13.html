@@ -1,0 +1,467 @@
+<html>
+	<head>
+		<title>
+			COLORS TAG
+		</title>
+	</head>
+
+
+	<style>
+body{
+		background:url(bg7.jpg);
+		color:rgba(224, 226, 219, 0.829);
+		background-size:1350px 800px,auto;
+		background-attachment:fixed;
+	
+	}
+	
+	fieldset{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.6);
+		border-radius:20px;
+		padding: 2px;
+	
+	}
+	
+	.headder{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.6);
+		border-radius:20px;
+		padding: 5px;
+		color:black;
+		text-align:center;
+	}
+	
+	.briefing{
+			border: 2px solid black;
+			background-color:rgba(0,0,0,0.6);
+			border-radius:20px;
+			padding: 5px;
+		
+		}
+	
+
+	table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	}
+
+	.example{
+		border: 2px solid black;
+		background-color:rgba(255,255,255,0.5);
+		border-style:double;
+		border-radius:10px;
+		color: red;
+	}
+
+	.output{
+		border: 2px solid black;
+		background-color:rgba(255,255,255,0.5);
+		border-style:solid;
+		border-radius:10px;
+	}
+	body {margin:0;}
+
+.navbar {
+    position: fixed;
+    top:0;
+    width:100%;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+.pan
+{
+	margin:0px 40px;
+}
+	</style>
+
+	<body>
+	<div class="navbar">
+  <a href="Proj.html">Home</a>
+  <a href="overview.html">Overview</a> 
+  <a href="tutos.html">Credits</a> 
+  <div class="subnav">
+    <button class="subnavbtn">Course Handout <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a style="color:black" href="1.html">Basic Tags</a>
+      <a style="color:black" href="2.html">Elements</a>
+      <a style="color:black" href="3.html">Attributes</a>
+      <a style="color:black" href="4.html">Formatting Tags</a>
+      <a style="color:black" href="5.html">Phase Tags</a>
+      <a style="color:black" href="6.html">Meta Tag</a>
+      <a style="color:black" href="7.html">Comments</a>
+      <a style="color:black" href="8.html">Images</a>
+      <a style="color:black" href="9.html">Table</a>
+      <a style="color:black" href="10.html">List</a>
+      <a style="color:black" href="11.html">Frames</a>
+      <a style="color:black" href="12.html">Background</a>
+      <a style="color:black" href="13.html">Colors</a>
+      <a style="color:black" href="14.html">Links</a>
+      <a style="color:black" href="15.html">Marquee</a>
+      <a style="color:black" href="16.html">Header</a>
+      <a style="color:black" href="17.html">Fonts</a>
+      <a style="color:black" href="18.html">Forms</a>
+    
+    </div>
+  </div>
+  <a href="feedback.html">Feedback</a>
+</div>
+	<br>
+	<div class="pan">
+		<div class="headder">
+			<h1><p style="border: 2px solid red;font-family:verdana;margin-left:450px;border-radius:25px;padding:5px;text-align:center;margin-right:450px;background-color:red">COLORS' TAG </p> </h1>
+		</div>
+		<hr>
+		<hr>
+		<div class="briefing">
+			<h2><u>INTRODUCTION</u></h2>
+			<br>
+			<p> Colors are very important to give a good look and feel to your website. You can specify colors on page level using <body> tag or you can set colors for individual tags using bgcolor attribute.</p>
+			<p>The &ltbody&gt tag has following attributes which can be used to set different colors -</p>
+			<ul type="square">
+			<li>bgcolor - sets a color for the background of the page.</li>
+			<li>text - sets a color for the body text.</li>
+			<li>link - sets a color for linked text.</li>
+			<li>vlink - sets a color for visited links - that is, for linked text that you have already clicked on.</li>
+
+
+			</ul>
+		</div>
+
+		<hr>
+		<h1>Standard 16 Colors</h1><br>
+Here is the list of Standard 16 Colors names and it is recommended to use them.
+<br>
+<br>
+<br>
+		<table class="table table-bordered" >
+				<tr>
+				<td bgcolor="black" width="20"></td>
+				<td width="50">Black</td>
+				<td bgcolor="gray" width="20"></td>
+				<td width="50">Gray</td>
+				<td bgcolor="silver" width="20"></td>
+				<td width="50">Silver</td>
+				<td bgcolor="white" width="20"></td>
+				<td width="50">White</td>
+				</tr>
+				<tr>
+				<td bgcolor="yellow" width="20"></td>
+				<td width="50">Yellow</td>
+				<td bgcolor="lime" width="20"></td>
+				<td width="50">Lime</td>
+				<td bgcolor="aqua" width="20"></td>
+				<td width="50">Aqua</td>
+				<td bgcolor="fuchsia" width="20"></td>
+				<td width="50">Fuchsia</td>
+				</tr>
+				<tr>
+				<td bgcolor="red" width="20"></td>
+				<td width="50">Red</td>
+				<td bgcolor="green" width="20"></td>
+				<td width="50">Green</td>
+				<td bgcolor="blue" width="20"></td>
+				<td width="50">Blue</td>
+				<td bgcolor="purple" width="20"></td>
+				<td width="50">Purple</td>
+				</tr>
+				<tr>
+				<td bgcolor="maroon" width="20"></td>
+				<td width="50">Maroon</td>
+				<td bgcolor="olive" width="20"></td>
+				<td width="50">Olive</td>
+				<td bgcolor="navy" width="20"></td>
+				<td width="50">Navy</td>
+				<td bgcolor="teal" width="20"></td>
+				<td width="50">Teal</td>
+				</tr>
+</table><hr>
+		<div class="tagdescription">
+			<h2><u>CODE FOR IMPLEMENTATION OF COLOR TAG</u></h2>
+			<p>Here are the examples to set background of an HTML tag by color name -</p>
+			<fieldset>
+			<legend>Example</legend> <br>
+			<p>
+<pre>
+<div class="example">
+<&lt!DOCTYPE html&gt<br>
+
+&lt html &gt<br>
+&lt head &gt<br>
+	&lt title &gt <font color="white">HTML Colors by RGB code</font> &lt /title &gt<br>
+&lt /head &gt<br>
+&lt body text = "rgb(0,0,255)" bgcolor = "rgb(0,255,0)"&gt<br>
+		&lt p &gt<font color="white">Use different color code for for body and table and see the result.</font>&lt /p&gt<br>
+
+		&lt table bgcolor = "rgb(0,0,0)"&gt<br>
+		 &lt tr&gt<br>
+			&lt td&gt<br>
+				&lt font color = "rgb(255,255,255)"&gt<font color="white"> This text will appear white on black background.</font>&lt /font &gt<br>
+			&lt /td&gt<br>
+		 &lt /tr&gt<br>
+		&lt /table &gt<br>
+&lt /body &gt<br>
+
+&lt /html &gt<br></div>
+</pre>
+			</p>
+			</fieldset>
+			
+
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					Use different color code for for body and table and see the result.
+				<table  border="1">
+				<tr>
+					<td>
+				<font color = "rgb(255,255,255)"> This text will appear white on black background.</font><br>
+				<TD><font color = "rgb(200,200,200)"> This text will appear white on black background.</font><br>
+
+				</td>
+				</tr>
+				</table >
+				</p>
+			</div>
+			</fieldset>
+		</div>
+		<hr>
+		<div class="attributes">
+			<h2><u>HTML Colors - Hex Codes</u></h2>
+			<p>A hexadecimal is a 6 digit representation of a color.<br>
+			The first two digits(RR) represent a red value, the next two are a green value(GG), and the last are the blue value(BB).<br>
+
+A hexadecimal value can be taken from any graphics software like Adobe Photoshop, Paintshop Pro or MS Paint.<br>
+
+Each hexadecimal code will be preceded by a pound or hash sign #. Following is a list of few colors using hexadecimal notation.<br></p>
+			<table class="table table-bordered">
+<tr>
+<th width="50%">Color</th>
+<th width="50%">Color HEX</th>
+</tr>
+<tr>
+<td bgcolor="#000000">&nbsp;</td>
+<td>#000000</td>
+</tr>
+<tr>
+<td bgcolor="#ff0000">&nbsp;</td>
+<td>#FF0000</td>
+</tr>
+<tr>
+<td bgcolor="#00ff00">&nbsp;</td>
+<td>#00FF00</td>
+</tr>
+<tr>
+<td bgcolor="#0000ff">&nbsp;</td>
+<td>#0000FF</td>
+</tr>
+<tr>
+<td bgcolor="#ffff00">&nbsp;</td>
+<td>#FFFF00</td>
+</tr>
+<tr>
+<td bgcolor="#00ffff">&nbsp;</td>
+<td>#00FFFF</td>
+</tr>
+<tr>
+<td bgcolor="#ff00ff">&nbsp;</td>
+<td>#FF00FF</td>
+</tr>
+<tr>
+<td bgcolor="#c0c0c0">&nbsp;</td>
+<td>#C0C0C0</td>
+</tr>
+<tr>
+<td bgcolor="#ffffff">&nbsp;</td>
+<td>#FFFFFF</td>
+</tr>
+</table>
+<fieldset>
+<legend>Example</legend><br>
+			<div class="example">
+			<p>
+				<p><font color="white">Here are the examples to set background of an HTML tag by color code in hexadecimal &minus;</font></p>
+				&lt !DOCTYPE html&gt<br>
+				&lt html&gt<br>
+
+				   &lt head&gt<br>
+				      &lt title&gt<font color="white"> HTML Colors by Hex</font>&lt/title&gt<br>
+				   &lt /head&gt<br>
+
+				   &lt body text = "#0000FF" bgcolor = "#00FF00"&gt<br>
+				      &lt p&gt <font color="white">Use different color hexa for for body and table and see the result.</font>&lt/p&gt<br>
+
+				      &lt table bgcolor = "#000000"&gt<br>
+				         &lt tr&gt<br>
+				            &lt td&gt<br>
+				               &ltfont color = "#FFFFFF"&gt<font color="white">This text will appear white on black background.</font>&lt/font&gt<br>
+				            &lt/td&gt<br>
+				         &lt/tr&gt<br>
+				      &lt/table&gt<br>
+				   &lt/body&gt<br>
+
+&lt/html&gt<br>
+			</div>
+			</fieldset>
+
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>color code in hexadecimal -</h2><br>
+					<table>
+									         <tr>
+									            <td>
+									               <font color = "#FFFFFF">This text will appear white on black background.</font>
+									            </td>
+									         </tr>
+									      </table>
+
+				</p>
+			</div>
+			</fieldset>
+		</div>
+		<br>
+		<hr>
+		<div class="imagelink">
+			<h2><u>HTML Colors - RGB Values</u></h2>
+			<p>This color value is specified using the rgb( ) property.<br>This property takes three values, one each for red, green, and blue.<br> The value can be an integer between 0 and 255 or a percentage.<br>Following is a list to show few colors using RGB values.</br>
+</p><table class="table table-bordered">
+<tr>
+<th width="50%">Color</th>
+<th width="50%">Color RGB</th>
+</tr>
+<tr>
+<td bgcolor="#000000">&nbsp;</td>
+<td>rgb(0,0,0)</td>
+</tr>
+<tr>
+<td bgcolor="#ff0000">&nbsp;</td>
+<td>rgb(255,0,0)</td>
+</tr>
+<tr>
+<td bgcolor="#00ff00">&nbsp;</td>
+<td>rgb(0,255,0)</td>
+</tr>
+<tr>
+<td bgcolor="#0000ff">&nbsp;</td>
+<td>rgb(0,0,255)</td>
+</tr>
+<tr>
+<td bgcolor="#ffff00">&nbsp;</td>
+<td>rgb(255,255,0)</td>
+</tr>
+<tr>
+<td bgcolor="#00ffff">&nbsp;</td>
+<td>rgb(0,255,255)</td>
+</tr>
+<tr>
+<td bgcolor="#ff00ff">&nbsp;</td>
+<td>rgb(255,0,255)</td>
+</tr>
+<tr>
+<td bgcolor="#c0c0c0">&nbsp;</td>
+<td>rgb(192,192,192)</td>
+</tr>
+<tr>
+<td bgcolor="#ffffff">&nbsp;</td>
+<td>rgb(255,255,255)</td>
+</tr>
+</table>
+
+			<fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+			&lt !DOCTYPE html&gt
+			&lt html &gt<br>
+
+			   &lt head &gt<br>
+			      &lt title&gt <font color="white">HTML Colors by RGB code</font>&lt /title &gt<br>
+			   &lt/head&gt <br>
+			   &lt body text = "rgb(0,0,255)" bgcolor = "rgb(0,255,0)"&gt<br>
+			      &ltp&gt<font color="white">Use different color code for for body and table and see the result.</font>&lt/p&gt<br>
+			      &lt table bgcolor = "rgb(0,0,0)"&gt<br>
+			         &lttr&gt<br>
+			            &lttd&gt<br>
+			               &ltfont color = "rgb(255,255,255)"&gt<font color="white">This text will appear white on black background.</font>&lt/font&gt<br>
+			            &lt/td&gt<br>
+			         &lt/tr&gt<br>
+			      &lt/table&gt<br>
+			   &lt/body&gt<br>
+
+&lt;/html&gt;
+
+					</p></div>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<table bgcolor = "black">
+				<tr>
+				<td>
+				<font color = "white">This text will appear white on black background.</font>
+				</td>
+				</tr>
+</table>
+			</div>
+			</fieldset>
+		</div>
+	</body>
+</html>
+

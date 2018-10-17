@@ -1,0 +1,392 @@
+<html>
+	<head>
+		<title>
+			OVERVIEW-BASIC HTML DOCUMENTS
+		</title>
+	</head>
+	
+	
+	<style>
+	
+	body{
+		background:url(bg3.jpg);
+		color:orange;
+		background-size:1350px 800px,auto;
+		background-attachment:fixed;
+	
+	}
+	
+	fieldset{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.6);
+		border-radius:20px;
+		padding: 2px;
+	
+	}
+	
+	.headder{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.6);
+		border-radius:20px;
+		padding: 5px;
+		color:black;
+		text-align:center;
+	}
+	
+	.briefing{
+			border: 2px solid black;
+			background-color:rgba(0,0,0,0.6);
+			border-radius:20px;
+			padding: 5px;
+		
+		}
+	
+	
+	
+	
+	table, th, td {
+    border: 1px solid orange;
+    border-collapse: collapse;
+	}
+
+	.example{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.5);
+		border-style:double;
+		border-radius:10px;
+	}
+
+	.output{
+		border: 2px solid black;
+		background-color:rgba(255,255,255,0.5);
+		border-style:solid;
+		border-radius:10px;
+		color:white;
+
+	}
+
+	th{
+		color:white;
+	}
+	
+	td{
+		color:silver;
+	}
+body {margin:0;}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+	</style>
+	
+	<body>
+	<div class="navbar">
+  <a href="Proj.html">Home</a>
+  <a href="overview.html">Overview</a> 
+  <a href="tutos.html">Credits</a> 
+  <div class="subnav">
+    <button class="subnavbtn">Course Handout <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a style="color:black" href="1.html">Basic Tags</a>
+      <a style="color:black" href="2.html">Elements</a>
+      <a style="color:black" href="3.html">Attributes</a>
+      <a style="color:black" href="4.html">Formatting Tags</a>
+      <a style="color:black" href="5.html">Phase Tags</a>
+      <a style="color:black" href="6.html">Meta Tag</a>
+      <a style="color:black" href="7.html">Comments</a>
+      <a style="color:black" href="8.html">Images</a>
+      <a style="color:black" href="9.html">Table</a>
+      <a style="color:black" href="10.html">List</a>
+      <a style="color:black" href="11.html">Frames</a>
+      <a style="color:black" href="12.html">Background</a>
+      <a style="color:black" href="13.html">Colors</a>
+      <a style="color:black" href="14.html">Links</a>
+      <a style="color:black" href="15.html">Marquee</a>
+      <a style="color:black" href="16.html">Headder</a>
+      <a style="color:black" href="17.html">Fonts</a>
+      <a style="color:black" href="18.html">Forms</a>
+    
+    </div>
+  </div>
+  <a href="feedback.html">Feedback</a>
+</div><br>
+		<div class="headder">
+			<h1><p style="border: 2px solid red;border-radius:25px;margin-left:450px;padding:5px;text-align:center;margin-right:450px;background-color:red">BASIC HTML DOCUMENT</p></h1>
+		</div>
+		<hr>
+		<hr>
+		<div class="briefing">
+		<h2><font color=snow face="Courier New"><u>INTRODUCTION</font></u></h2>
+			<p><font color="silver">HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.
+
+         <ul type="square"><li>Hypertext refers to the way in which Web pages (HTML documents) are linked together. Thus, the link available on a webpage is called Hypertext.
+
+         <li>As its name suggests, HTML is a Markup Language which means you use HTML to simply "mark-up" a text document with tags that tell a Web browser how to structure it to display.</ul>
+
+Originally, HTML was developed with the intent of defining the structure of documents like headings, paragraphs, lists, and so forth to facilitate the sharing of scientific information between researchers.
+
+Now, HTML is being widely used to format web pages with the help of different tags available in HTML language.
+
+			In its simplest form, following is an example of an HTML document:</font></p>
+		</div><hr>
+        <fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp This is document title <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+			    &nbsp &nbsp &lth1&gt This is a heading  &lt/h1&gt
+			    &ltp&gt Document goes here .....&lt/p&gt
+			  
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</fieldset>
+			</div>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<h2>This will produce the folllowing results:-</h2><br>
+					<h1>This is a heading</h1>
+                    <p>Document content goes here.....</p>
+				</p>
+			</div>
+			</fieldset>
+
+			<hr>
+			
+			
+			
+			
+			
+			<div class="briefing">
+			<h1><font color=snow face="Courier New"><u>HTML TAGS</u></font></h1>
+		
+			<p><font color="silver">As told earlier, HTML is a markup language and makes use of various tags to format the content. These tags are enclosed within angle braces <Tag Name>. Except few tags, most of the tags have their corresponding closing tags. For example, <html> has its closing tag </html> and <body> tag has its closing tag </body> tag etc.</p>
+		
+		<p> Above example of HTML document uses the following tags − </p>
+        
+        
+
+
+
+
+        <table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Option and Description</th>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td><b>&lthtml&gt</b><br>
+						<p> This tag encloses the complete HTML document and mainly comprises of document header which is represented by &lt head &gt...&lt /head &gt and document body which is represented by &lt body &gt...&lt /body &gt tags.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>&lthead&gt</b><br>
+						<p>This tag represents the document's header which can keep other HTML tags like &lt title &gt, &lt link &lt etc.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>3</td>
+					<td><b>&lttitle&gt</b><br>
+						<p> The &lt title &gt tag is used inside the &lthead&gt tag to mention the document title.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>4</td>
+					<td><b>&ltbody&gt</b><br>
+						<p> This tag represents the document's body which keeps other HTML tags like &lth1&gt, &ltdiv&gt, &ltp&gt etc.
+					</td>
+				</tr>
+				
+				<tr>
+					<td>5</td>
+					<td><b>&lth1&gt</b><br>
+						<p>This tag represents the heading.
+					</td>
+				</tr>
+
+				<tr>
+					<td>5</td>
+					<td><b>&ltp&gt</b><br>
+						<p>This tag represent a paragraph.
+					</td>
+				</tr>
+			</table>
+
+
+			  <p>To learn HTML, we need to study various tags and understand how they behave, while formatting a textual document. Learning HTML is simple as users have to learn the usage of different tags in order to format the text or images to make a beautiful webpage.<br>
+
+                          World Wide Web Consortium (W3C) recommends to use lowercase tags starting from HTML 4.</font></p>
+			</div>
+
+
+
+
+
+<hr>
+		<div class="briefing">
+
+			<h2><font color=snow face="Courier New"><u>HTML DOCUMENT STRUCTURE</font></u></h2>
+		
+		
+			<p><font color="white">A typical HTML document will have the following structure:</font></p>
+		</div><hr>
+        <fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Document header related tags <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt p &gt Document body related tags &lt br&gt <br>
+				
+			   
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</fieldset>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+		
+			
+					
+			
+				</p>
+			</div>
+			</fieldset>
+		</div>
+	</body>
+</html>
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

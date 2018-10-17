@@ -1,0 +1,399 @@
+<html>
+	<head>
+		<title>
+			PHRASE TAGS
+		</title>
+	</head>
+	
+		<style>
+	body{
+		background:url(bg7.jpg);
+		color:rgba(224, 226, 219, 0.829);
+		background-size:1350px 800px,auto;
+		background-attachment:fixed;
+	
+	}
+	
+	fieldset{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.6);
+		border-radius:20px;
+		padding: 2px;
+	
+	}
+	
+	.headder{
+		border: 2px solid black;
+		background-color:rgba(0,0,0,0.6);
+		border-radius:20px;
+		padding: 5px;
+		color:black;
+		text-align:center;
+	}
+	
+	.briefing{
+			border: 2px solid black;
+			background-color:rgba(0,0,0,0.6);
+			border-radius:20px;
+			padding: 5px;
+		
+		}
+	
+
+	table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	}
+	
+	.example{
+		border: 2px solid black;
+		background-color:rgba(255,255,255,0.5);
+		border-style:double;
+		border-radius:10px;
+		color: red;
+	}
+	
+	.output{
+		border: 2px solid black;
+		background-color:rgba(255,255,255,0.5);
+		border-style:solid;
+		border-radius:10px;
+	
+	}
+	body {margin:0px;}
+
+.navbar {
+    position: fixed;
+    top:0;
+    width:100%;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+.pan
+{
+	margin:0px 40px;
+}
+	</style>
+
+	
+	<body>
+	<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#home">Overview</a> 
+  <a href="#home">Credits</a> 
+  <div class="subnav">
+    <button class="subnavbtn">Course Handout <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a style="color:black" href="1.html">Basic Tags</a>
+      <a style="color:black" href="2.html">Elements</a>
+      <a style="color:black" href="3.html">Attributes</a>
+      <a style="color:black" href="4.html">Formatting Tags</a>
+      <a style="color:black" href="5.html">Phase Tags</a>
+      <a style="color:black" href="6.html">Meta Tag</a>
+      <a style="color:black" href="7.html">Comments</a>
+      <a style="color:black" href="8.html">Images</a>
+      <a style="color:black" href="9.html">Table</a>
+      <a style="color:black" href="10.html">List</a>
+      <a style="color:black" href="11.html">Frames</a>
+      <a style="color:black" href="12.html">Background</a>
+      <a style="color:black" href="13.html">Colors</a>
+      <a style="color:black" href="14.html">Links</a>
+      <a style="color:black" href="15.html">Marquee</a>
+      <a style="color:black" href="16.html">Header</a>
+      <a style="color:black" href="17.html">Fonts</a>
+      <a style="color:black" href="18.html">Forms</a>
+    
+    </div>
+  </div>
+  <a href="feedback.html">Feedback</a>
+</div><br>
+<div class="pan">
+		<div class="headder">
+			<h1><center><p style="border: 2px solid red ; border-radius:25px;font-family:verdana;margin-left:450px;padding:5px;text-align:center;margin-right:450px;background-color:red">PHRASE TAGS</p></center></h1>
+		</div>
+		<hr>
+		<hr>
+		<div class="briefing">
+			<h2><u><font color=snow face="Courier New">INTRODUCTION</font></u></h2>
+			<br>
+			<p><font color="silver">The phrase tags have been desicolgned for specific purposes, though they are displayed in a similar way as other basic tags like &ltb&gt, &lti&gt, &ltpre&gt </font></p>
+		
+		</div>
+		<hr>
+		<div class="tagdescription">
+		<div class="briefing">
+			<h2><u><font color=snow face="Courier New">EMPHASIZED TEXT</font></u></h2>
+			<p><font color="silver">Anything that appears within &lt em &gt...&lt /em &gt element is displayed as emphasized text.</font></p>
+			</div>
+			<fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt <font color="red"> html</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Emphasized Text Example</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">body</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">p</font> &gt <br> 
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">This is an example of &lt em &gt emphasized &lt/em&gt typeface. &lt/p&gt </font><br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/body</font> &gt <br>
+				&lt <font color="red">/html</font> &gt 
+				</p>
+				</fieldset
+				</div>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					<font color="white">The following word uses an <em>emphasized</em> typeface.</font>
+				</p>
+			</div>
+			</fieldset>
+		</div>
+	</body>
+</html>
+		<hr>
+		<div class="tagdescription">
+			<h2><u><font color=snow face="Courier New">MARKED TEXT</font></u></h2>
+			<p> <font color="silver">Anything that appears with-in &lt mark &gt ... &lt /mark &gt element, is displayed as marked with yellow ink.</font></p>
+			<fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt <font color="red">html</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Marked Text Example</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">body</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">p</font> &gt <br> 
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">The following word has been  &lt mark &gt marked &lt /mark &gt with yellow. &lt /p &gt </font><br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/body</font> &gt <br>
+				&lt <font color="red">/html </font>&gt
+				</p>
+				</fieldset
+				</div>				
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+					The following word has been <mark>marked</mark> with yellow
+				</p>
+			</div>
+			</fieldset>
+		</div>
+	</body>
+</html>
+
+<hr>
+		<div class="tagdescription">
+			<h2><u><font color=snow face="Courier New">STRONG TEXT</font></u></h2>
+			<p><font color="silver">Anything that appears within &lt strong &gt ... &lt /strong &gt element is displayed as important text. </font></p>
+			<fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt <font color="red">html</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Strong Text Example</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">body</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">p</font> &gt <br> 
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">The following word uses a  &lt strong &gt strong &lt /strong &gt typeface. &lt /p &gt </font> <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/body</font> &gt <br> 
+				&lt <font color="red">/html</font> &gt 
+				</p>
+				</fieldset
+				</div>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+				The following word uses a <strong>strong</strong> typeface.	
+				</p>
+			</div>
+			</fieldset>
+		</div>
+	</body>
+</html>
+
+<hr>
+		<div class="tagdescription">
+			<h2><u><font color=snow face="Courier New">TEXT ABBREVIATION </font></u></h2>
+			<p><font color="silver">You can abbreviate a text by putting it inside opening &lt abbr &gt and closing &lt /abbr &gt tags. If present, the title attribute must contain this full description and nothing else. </font></p>
+			<fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt <font color="red">html</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Text Abbreviation</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">body</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">p</font> &gt <br> 
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">My best friend's name is &lt abbr &nbsp title="Abhishek" &gt Abhi &lt /abbr &gt </font> 
+				 &lt <font color="red">/p </font>&gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/body</font> &gt <br>
+				&lt <font color="red">/html</font> &gt 
+				</p>
+				</fieldset
+				</div>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+				My best friend's name is  <abbr title = "Abhishek">Abhi</abbr>.
+				</p>
+			</div>
+			</fieldset>
+		</div>
+	</body>
+</html>
+
+<hr>
+		<div class="tagdescription">
+			<h2><u><font color=snow face="Courier New">ACRONYM ELEMENT</font> </u></h2>
+			<p>
+				<font color="silver">The &lt acronym &gt element allows you to indicate that the text between &lt acronym &gt and &lt /acronym &gt tags is an acronym.
+
+At present, the major browsers do not change the appearance of the content of the &lt acronym &gt element.</font>
+			</p>
+			<fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt <font color="red">html</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Acronym Example</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">body</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">p</font> &gt <br> 
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <font color="white">This chapter covers marking up text in &lt acronym &gt XHTML &lt /acronym &gt.</font>
+				 &lt <font color="red">/p</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/body</font> &gt <br>				
+				&lt <font color="red">/html</font> &gt 
+				</p>
+				</fieldset
+				</div>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>
+				This chapter covers marking up text in <acronym>XHTML</acronym>.
+				</p>
+			</div>
+			</fieldset>
+		</div>
+	</body>
+</html>
+
+<hr>
+		<div class="tagdescription">
+			<h2><u><font color=snow face="Courier New">TEXT DIRECTION</font> </u></h2>
+			<p>
+				<font color="silver">The &lt bdo &gt ... &lt /bdo &gt element stands for Bi-Directional Override and it is used to override the current text direction.</font>
+			</p>
+			<fieldset>
+			<legend>Example</legend> <br>
+			<div class="example">
+			<p>
+				
+				&lt <font color="red">html</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="white">Text Direction Example</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/title</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/head</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">body</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">p</font> &gt <br> 
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <font color="white">This text will go left to right.</font>
+				&lt <font color="red">/p</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &lt <font color="red">p</font> &gt <br> 
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &lt <font color="red">bdo dir="rtl"</font> &gt <font color="white">This text will go right to left.</font> &lt <font color="red">/bdo</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt <font color="red">/p</font> &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt <font color="red">/body</font> &gt <br> 
+				&lt <font color="red">/html</font> &gt
+				</p>
+				</fieldset
+				</div>				
+			<fieldset>
+			<legend>Output</legend><br>
+			<div class="output">
+				<p>This text will go left to right.</p>
+      <p><bdo dir = "rtl">This text will go right to left.
+      </bdo></p>
+				
+		
+			</div>
+			</fieldset>
+		</div>
+	</div>
+	</body>
+</html>
